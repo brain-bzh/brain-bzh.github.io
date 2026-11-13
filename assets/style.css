@@ -531,6 +531,51 @@ h2 em {
   margin-top: 24px;
 }
 
+.people-list .person-card {
+  border-top: 1px solid var(--line);
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.person-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #d0e4ea;
+  background-color: #eaf3f5;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.person-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.person-info a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.person-info small {
+  display: block;
+  font-weight: 400;
+  color: #697f87;
+  font-size: 13.5px;
+  margin-top: 2px;
+}
+
 .people-list span {
   border-top: 1px solid var(--line);
   padding: 16px 0;

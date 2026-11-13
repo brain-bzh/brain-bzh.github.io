@@ -13,7 +13,19 @@ nav_order: 2
       <h2 id="group-{{ forloop.index }}">{{ group.group | escape }}</h2>
       <ul class="team-members">
         {% for member in group.members %}
-          <li><span>{% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer">{{ member.name | escape }}</a>{% else %}{{ member.name | escape }}{% endif %}</span>{% if member.role %}<small>{{ member.role | escape }}</small>{% endif %}</li>
+          <li class="team-member-item">
+            {% if member.avatar %}
+              <img class="member-avatar" src="{{ member.avatar | relative_url }}" alt="{{ member.name | escape }}" width="44" height="44" loading="lazy">
+            {% endif %}
+            <div class="member-info">
+              {% if member.scholar %}
+                <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer">{{ member.name | escape }}</a>
+              {% else %}
+                <span class="member-name">{{ member.name | escape }}</span>
+              {% endif %}
+              {% if member.role %}<small>{{ member.role | escape }}</small>{% endif %}
+            </div>
+          </li>
         {% endfor %}
       </ul>
     </section>

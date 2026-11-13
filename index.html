@@ -243,7 +243,19 @@ permalink: /
           <div class="people-list">
             {% assign permanent_researchers = site.data.people | first %}
             {% for member in permanent_researchers.members %}
-              <span>{% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer">{{ member.name | escape }}</a>{% else %}{{ member.name | escape }}{% endif %}{% if member.role %} <small>{{ member.role | escape }}</small>{% endif %}</span>
+              <div class="person-card">
+                {% if member.avatar %}
+                  <img class="person-avatar" src="{{ member.avatar | relative_url }}" alt="{{ member.name | escape }}" width="44" height="44" loading="lazy">
+                {% endif %}
+                <div class="person-info">
+                  {% if member.scholar %}
+                    <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer">{{ member.name | escape }}</a>
+                  {% else %}
+                    <span class="person-name">{{ member.name | escape }}</span>
+                  {% endif %}
+                  {% if member.role %}<small>{{ member.role | escape }}</small>{% endif %}
+                </div>
+              </div>
             {% endfor %}
           </div>
           <p class="people-more">Our team also includes research engineers, postdoctoral researchers, and PhD students. <a

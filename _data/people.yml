@@ -3,44 +3,65 @@
     - name: Nicolas Farrugia
       role: Full professor · HDR
       scholar: https://scholar.google.com/citations?user=IO4nLK4AAAAJ
+      avatar: /assets/img/people/nicolas-farrugia.jpg
     - name: Vincent Gripon
       role: Full professor · HDR · Team lead
       scholar: https://scholar.google.com/citations?user=n3IKEqgAAAAJ
+      avatar: /assets/img/people/vincent-gripon.jpg
     - name: Giulia Lioi
       role: Associate professor
       scholar: https://scholar.google.com/citations?user=mx2AqLYAAAAJ
+      avatar: /assets/img/people/giulia-lioi.jpg
     - name: Mathieu Léonardon
       role: Associate professor · HDR
       scholar: https://scholar.google.com/citations?user=ZqWCKuwAAAAJ
+      avatar: /assets/img/people/mathieu-leonardon.jpg
     - name: Axel Marmoret
       role: Associate professor
       scholar: https://scholar.google.com/citations?user=2PRDe3oAAAAJ
+      avatar: /assets/img/people/axel-marmoret.jpg
     - name: Bastien Pasdeloup
       role: Associate professor · HDR
       scholar: https://scholar.google.com/citations?user=dKOgoG4AAAAJ
+      avatar: /assets/img/people/bastien-pasdeloup.jpg
 - group: Postdoctoral researchers
   members:
     - name: Venkatesh Subramani
       scholar: https://scholar.google.com/citations?user=4aZ_rOIAAAAJ
+      avatar: /assets/img/people/venkatesh-subramani.svg
 - group: PhD students
   members:
     - name: Ismail Amessegher
+      avatar: /assets/img/people/ismail-amessegher.jpg
     - name: Réda Bensaid
       scholar: https://scholar.google.com/citations?user=InQw64sAAAAJ
+      avatar: /assets/img/people/reda-bensaid.svg
     - name: Lucas Benoit
       scholar: https://scholar.google.com/citations?user=WvgNCFEAAAAJ
+      avatar: /assets/img/people/lucas-benoit.svg
     - name: Philippe Forest
+      avatar: /assets/img/people/philippe-forest.jpg
     - name: Baptiste Hilaire
       scholar: https://scholar.google.com/citations?user=FI9X9R4AAAAJ
+      avatar: /assets/img/people/baptiste-hilaire.jpg
     - name: Kaiteng Jiang
+      avatar: /assets/img/people/kaiteng-jiang.jpg
     - name: Tévchhorpoan Khieu
+      avatar: /assets/img/people/tevchhorpoan-khieu.jpeg
     - name: Lucie Jean-Labadye
+      avatar: /assets/img/people/lucie-jean-labadye.svg
     - name: Elise Lagarde
+      avatar: /assets/img/people/elise-lagarde.jpeg
     - name: Jonathan Lys
       scholar: https://scholar.google.com/citations?user=heUq7WEAAAAJ
+      avatar: /assets/img/people/jonathan-lys.jpg
     - name: Jérémy Morlier
       scholar: https://scholar.google.com/citations?user=oWRu5csAAAAJ
+      avatar: /assets/img/people/jeremy-morlier.svg
     - name: Joshua Rivera
       scholar: https://scholar.google.com/citations?user=Ta024bgAAAAJ
+      avatar: /assets/img/people/joshua-rivera.jpg
     - name: Nolan Sisouphanthong
+      avatar: /assets/img/people/nolan-sisouphanthong.jpeg
     - name: Alexandre Thouvenot
+      avatar: /assets/img/people/alexandre-thouvenot.svg
