@@ -1,0 +1,46 @@
+- group: Permanent researchers
+  members:
+    - name: Nicolas Farrugia
+      role: Full professor · HDR
+      scholar: https://scholar.google.com/citations?user=IO4nLK4AAAAJ
+    - name: Vincent Gripon
+      role: Full professor · HDR · Team lead
+      scholar: https://scholar.google.com/citations?user=YQz6XoYAAAAJ
+    - name: Giulia Lioi
+      role: Associate professor
+      scholar: https://scholar.google.com/citations?user=mx2AqLYAAAAJ
+    - name: Mathieu Léonardon
+      role: Associate professor · HDR
+      scholar: https://scholar.google.com/citations?user=ZqWCKuwAAAAJ
+    - name: Axel Marmoret
+      role: Associate professor
+      scholar: https://scholar.google.com/citations?user=2PRDe3oAAAAJ
+    - name: Bastien Pasdeloup
+      role: Associate professor · HDR
+      scholar: https://scholar.google.com/citations?user=dKOgoG4AAAAJ
+- group: Postdoctoral researchers
+  members:
+    - name: Venkatesh Subramani
+      scholar: https://scholar.google.com/citations?user=4aZ_rOIAAAAJ
+- group: PhD students
+  members:
+    - name: Ismail Amessegher
+    - name: Réda Bensaid
+      scholar: https://scholar.google.com/citations?user=InQw64sAAAAJ
+    - name: Lucas Benoit
+      scholar: https://scholar.google.com/citations?user=WvgNCFEAAAAJ
+    - name: Philippe Forest
+    - name: Baptiste Hilaire
+      scholar: https://scholar.google.fr/citations?user=FI9X9R4AAAAJ
+    - name: Kaiteng Jiang
+    - name: Tévchhorpoan Khieu
+    - name: Lucie Jean-Labadye
+    - name: Elise Lagarde
+    - name: Jonathan Lys
+      scholar: https://scholar.google.com/citations?user=heUq7WEAAAAJ
+    - name: Jérémy Morlier
+      scholar: https://scholar.google.com/citations?user=oWRu5csAAAAJ
+    - name: Joshua Rivera
+      scholar: https://scholar.google.com/citations?user=Ta024bgAAAAJ
+    - name: Nolan Sisouphanthong
+    - name: Alexandre Thouvenot

@@ -1,0 +1,27 @@
+name: Refresh HAL bibliography
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 5 * * 1'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/update_hal.py
+      - name: Propose bibliography update
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'Update HAL bibliography'
+          title: 'Update HAL bibliography'
+          body: 'Automated HAL refresh. Review publication coverage and metadata before merging.'
+          branch: automation/update-hal
+          add-paths: |
+            _bibliography/papers.bib
+            data/hal-publications.json
