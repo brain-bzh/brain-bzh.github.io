@@ -60,7 +60,6 @@
         {% else %}{% assign publication_type = 'Other' %}
       {% endcase %}
       <span class="publication-type">{{ publication_type }}</span>
-      {% if entry.featured == 'true' %}<span class="publication-featured">★ Highlight</span>{% endif %}
     </div>
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>

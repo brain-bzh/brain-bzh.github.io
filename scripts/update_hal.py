@@ -99,8 +99,6 @@ def annotate_bibtex(bib, docs, rules, overrides=None):
         if badge:
             label, color = badge
             fields += f'\n  ABBR = {{{label}}},\n  VENUECOLOR = {{{color}}},'
-        if venue:
-            fields += '\n  FEATURED = {true},'
         entry = re.sub(r'\s*}\s*$', lambda _: fields + '\n}', entry)
         annotated.append(entry.strip())
     if found != set(by_id):
@@ -134,7 +132,7 @@ def main():
     (output / 'hal-publications.json').write_text(json.dumps(docs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     (ROOT / '_bibliography').mkdir(exist_ok=True)
     (ROOT / '_bibliography' / 'papers.bib').write_text('\n\n'.join(chunks) + '\n', encoding='utf-8')
-    print(f'Downloaded {total} BRAIN-affiliated HAL records; featured {sum(bool(featured_venue(doc, rules)) for doc in docs)} matching venues.')
+    print(f'Downloaded {total} BRAIN-affiliated HAL records; badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues.')
 
 if __name__ == '__main__':
     try:
