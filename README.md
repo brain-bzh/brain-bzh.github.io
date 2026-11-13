@@ -11,7 +11,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Open http://127.0.0.1:4000/. Edit the homepage in `index.html`, its styling in `assets/style.css`, the publications page in `_pages/publications.md`, and team members in `_data/people.yml`. The announcements page displays al-folio news entries added to `_news/` (see `CONTRIBUTING.md`). The homepage's selected papers are manually curated; edit them there after checking conference acceptance. The gem's bibliography and theme layouts handle the publications page. `assets/css/main.scss` is a local visual override of al-folio's main stylesheet, so review it when upgrading the core gem.
+Open http://127.0.0.1:4000/. Edit the homepage in `index.html`, its styling in `assets/style.css`, the publications page in `_pages/publications.md`, and team members in `_data/people.yml`. The homepage's selected papers are manually curated; edit them there after checking conference acceptance. The gem's bibliography and theme layouts handle the publications page. `assets/css/main.scss` is a local visual override of al-folio's main stylesheet, so review it when upgrading the core gem.
 
 ## HAL bibliography
 

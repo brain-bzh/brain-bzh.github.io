@@ -108,7 +108,6 @@ permalink: /
         alt="IMT Atlantique"></a>
     <nav aria-label="Main navigation"><a href="#research">Research</a><a
         href="{{ '/publications/' | relative_url }}">Publications</a><a
-        href="{{ '/announcements/' | relative_url }}">News</a><a
         href="{{ '/people/' | relative_url }}">People</a></nav>
   </header>
   <main id="main">
@@ -171,23 +170,21 @@ permalink: /
         <h2>Research</h2>
       </div>
       <div class="section-content">
-        <p class="section-lead">From images and language to sound and brain signals, we explore how representations can
-          make AI more adaptable and efficient.</p>
-        <p>BRAIN is a research team of <a href="https://labsticc.fr/fr/equipes/brain">Lab-STICC</a> at <a
-            href="https://www.imt-atlantique.fr/en/research-innovation/teams/brain">IMT Atlantique</a>. Our work brings
-          together artificial intelligence, deep learning, and signal processing.</p>
+        <p class="section-lead">BRAIN is a research team of <a href="https://labsticc.fr/fr/equipes/brain">Lab-STICC (CNRS UMR 6285)</a> hosted at <a
+            href="https://www.imt-atlantique.fr/en/research-innovation/teams/brain">IMT Atlantique</a> and part of the Mathematical and Electrical Engineering (MEE) department.</p>
+        <p>The purpose of BRAIN is to investigate key questions at the crossbreed of Artificial Intelligence, Deep Learning and Signal Processing, with applications using images, sounds, text and more complex domains including neuroimaging data.</p>
         <div class="themes">
           <article><span>01</span>
-            <h3>Learning with less</h3>
-            <p>Making the most of limited data through few-shot learning and reusable representations.</p>
+            <h3>Thrifty AI</h3>
+            <p>How to find efficient representations in the low data regime (typically few-shot or few-label learning).</p>
           </article>
           <article><span>02</span>
-            <h3>Efficient AI</h3>
-            <p>Developing more resource-efficient models, from compression to computation at the edge.</p>
+            <h3>Compression of AI</h3>
+            <p>How to find efficient representations to lower the demand in computations and energy of AI systems, typically for AI on edge.</p>
           </article>
           <article><span>03</span>
-            <h3>Geometry &amp; signals</h3>
-            <p>Understanding structured data and representations across vision, audio, and neuroimaging.</p>
+            <h3>Geometry and AI</h3>
+            <p>How to leverage the geometry of latent spaces or input domains to better adapt and monitor AI systems.</p>
           </article>
         </div>
       </div>
@@ -231,50 +228,11 @@ permalink: /
       </div>
     </section>
 
-    <!-- 03 / LATEST NEWS -->
-    <section class="section wrap" id="news">
-      <div class="section-side">
-        <p class="eyebrow">03 / LATEST NEWS</p>
-        <h2>News &amp;<br><em>updates.</em></h2>
-        <p class="side-note">Recent announcements, publications, defenses, and team milestones.</p><a
-          class="text-link" href="{{ '/announcements/' | relative_url }}">All announcements <span
-            aria-hidden="true">↗</span></a>
-      </div>
-      <div class="section-content news-items">
-        {% assign recent_news = site.news | reverse %}
-        {% for item in recent_news limit: 3 %}
-          <article class="news-card">
-            <div class="news-meta">
-              <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%B %d, %Y" }}</time>
-              {% if item.inline %}<span class="news-tag">UPDATE</span>{% else %}<span class="news-tag">ANNOUNCEMENT</span>{% endif %}
-            </div>
-            <h3>
-              {% if item.inline %}
-                {{ item.title | default: "Team Announcement" }}
-              {% else %}
-                <a href="{{ item.url | relative_url }}">{{ item.title }} <span aria-hidden="true">↗</span></a>
-              {% endif %}
-            </h3>
-            {% if item.inline %}
-              <div class="news-excerpt">{{ item.content }}</div>
-            {% else %}
-              <p class="news-excerpt">{{ item.content | strip_html | truncatewords: 32 }}</p>
-              <div class="news-links">
-                <a href="{{ item.url | relative_url }}">Read full announcement <span aria-hidden="true">↗</span></a>
-              </div>
-            {% endif %}
-          </article>
-        {% else %}
-          <p class="side-note">Team announcements will appear here.</p>
-        {% endfor %}
-      </div>
-    </section>
-
-    <!-- 04 / PEOPLE -->
+    <!-- 03 / PEOPLE -->
     <section class="people-section" id="people">
       <div class="wrap section">
         <div class="section-side">
-          <p class="eyebrow">04 / PEOPLE</p>
+          <p class="eyebrow">03 / PEOPLE</p>
           <h2>People</h2>
           <p class="side-note">Researchers, engineers, and doctoral students working across disciplines.</p><a
             class="text-link" href="{{ '/people/' | relative_url }}">All team members <span
@@ -294,11 +252,11 @@ permalink: /
       </div>
     </section>
 
-    <!-- 05 / CONNECT -->
+    <!-- 04 / CONNECT -->
     <section class="contact" id="connect">
       <div class="wrap contact-inner">
         <div>
-          <p class="eyebrow">05 / CONNECT</p>
+          <p class="eyebrow">04 / CONNECT</p>
           <h2>Connect</h2>
         </div>
         <div>
