@@ -1388,8 +1388,7 @@ h2 em {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    animation: none !important;
     transition-duration: 0.01ms !important;
   }
   .will-reveal { opacity: 1 !important; transform: none !important; }
@@ -1516,4 +1515,398 @@ h2 em {
   .section {
     padding: 60px 0;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   Discreet Theme Switch Button & Dark Theme (html[data-theme="dark"])
+   --------------------------------------------------------------------------- */
+.site-header nav {
+  align-items: center;
+}
+
+.theme-toggle {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--muted);
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-left: -6px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+.theme-icon-sun {
+  display: none;
+}
+
+.theme-icon-moon {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon-sun {
+  display: block;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e8f3f7;
+  --muted: #93b0bd;
+  --paper: #0b161e;
+  --lime: #4ecfe9;
+  --line: #1c3342;
+  --dark: #173f54;
+  --accent: #38c0dc;
+  --accent-bright: #4ecfe9;
+  --accent-light: #132a38;
+  --card-bg: rgba(18, 37, 49, 0.82);
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.48);
+  --shadow-hover: 0 18px 40px -10px rgba(8, 126, 150, 0.34);
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(78, 207, 233, 0.08), transparent 38%),
+    radial-gradient(circle at 88% 16%, rgba(8, 126, 150, 0.10), transparent 42%);
+}
+
+html[data-theme="dark"] .skip {
+  background: #122531;
+  color: #e8f3f7;
+}
+
+html[data-theme="dark"] .header-shell {
+  background: rgba(11, 22, 30, 0.84);
+  border-bottom-color: var(--line);
+}
+
+html[data-theme="dark"] .header-shell.is-scrolled {
+  background: rgba(11, 22, 30, 0.94);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.38);
+  border-bottom-color: #213d4f;
+}
+
+html[data-theme="dark"] .wordmark-dot {
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .brain-logo {
+  filter: brightness(1.14) saturate(1.08);
+}
+
+html[data-theme="dark"] .institution-logo img {
+  filter: invert(1) hue-rotate(180deg) brightness(1.15);
+}
+
+html[data-theme="dark"] .theme-toggle {
+  background: rgba(19, 42, 56, 0.72);
+  border-color: #254558;
+  color: #9ec0ce;
+}
+
+html[data-theme="dark"] .theme-toggle:hover {
+  background: #173547;
+  border-color: #4ecfe9;
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .eyebrow {
+  color: #7ea6b6;
+}
+
+html[data-theme="dark"] .hero h1 em,
+html[data-theme="dark"] h2 em {
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .hero-intro {
+  color: #a4c0cc;
+}
+
+html[data-theme="dark"] .button {
+  background: #097c94;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .button:hover {
+  background: #18a0bc;
+  box-shadow: 0 8px 24px rgba(26, 165, 191, 0.32);
+}
+
+html[data-theme="dark"] .domain-chip {
+  color: #c2e8f2;
+  background: rgba(19, 42, 56, 0.78);
+  border-color: #24485b;
+}
+
+html[data-theme="dark"] .chip-dot {
+  background: #38c0dc;
+}
+
+html[data-theme="dark"] .domain-chip:hover {
+  background: #097c94;
+  color: #ffffff;
+  border-color: #38c0dc;
+}
+
+html[data-theme="dark"] .hero-art {
+  background:
+    radial-gradient(circle at 50% 52%, rgba(20, 56, 74, 0.68) 0%, rgba(12, 28, 39, 0.96) 74%),
+    #0d1e29;
+  color: #5bc4dc;
+  border-color: #214558;
+  box-shadow:
+    0 22px 54px -18px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(78, 207, 233, 0.12);
+}
+
+html[data-theme="dark"] .art-status-title {
+  color: #d6eff6;
+}
+
+html[data-theme="dark"] .art-status-pill {
+  background: rgba(14, 32, 44, 0.86);
+  color: #4ecfe9;
+  border-color: rgba(78, 207, 233, 0.28);
+}
+
+html[data-theme="dark"] .hero-bottom {
+  color: #7796a3;
+}
+
+html[data-theme="dark"] .section-content > p:not(.section-lead) {
+  color: #9cb8c4;
+}
+
+html[data-theme="dark"] .stat-box {
+  border-color: #213c4d;
+}
+
+html[data-theme="dark"] .stat-box:hover {
+  border-color: #38c0dc;
+}
+
+html[data-theme="dark"] .stat-num {
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .stat-label {
+  color: #8eb0bd;
+}
+
+html[data-theme="dark"] .theme-card {
+  border-color: #213c4d;
+  border-top-color: #28b5ce;
+}
+
+html[data-theme="dark"] .theme-card:hover {
+  border-color: #2e5d75;
+  border-top-color: #4ecfe9;
+}
+
+html[data-theme="dark"] .theme-visual {
+  background: linear-gradient(180deg, rgba(20, 49, 65, 0.72) 0%, rgba(13, 28, 38, 0.42) 100%);
+  border-color: rgba(56, 192, 220, 0.2);
+  color: #5bc4dc;
+}
+
+html[data-theme="dark"] .tv-bottleneck {
+  fill: #132a38;
+  stroke: #38c0dc;
+}
+
+html[data-theme="dark"] .theme-card span,
+html[data-theme="dark"] .paper-meta,
+html[data-theme="dark"] .people-label,
+html[data-theme="dark"] .news-meta {
+  color: #7fa2b0;
+}
+
+html[data-theme="dark"] .theme-tag {
+  background: rgba(26, 165, 191, 0.16);
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .theme-tag:hover {
+  background: #097c94;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .themes p,
+html[data-theme="dark"] .side-note {
+  color: #98b5c2;
+}
+
+html[data-theme="dark"] .work-section {
+  background: linear-gradient(180deg, #0e1c26 0%, #10202b 100%);
+  border-top-color: #1c3342;
+  border-bottom-color: #1c3342;
+}
+
+html[data-theme="dark"] .work-filter-btn {
+  background: rgba(18, 37, 49, 0.78);
+  border-color: #254657;
+  color: #bddbe6;
+}
+
+html[data-theme="dark"] .work-filter-btn:hover {
+  background: #163242;
+  border-color: #38c0dc;
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .work-filter-btn.is-active {
+  background: #097c94;
+  border-color: #28b5ce;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .paper {
+  background: rgba(18, 37, 49, 0.85);
+  border-color: #213d4d;
+  border-left-color: #28b5ce;
+}
+
+html[data-theme="dark"] .paper:hover {
+  background: #152c3b;
+  border-left-color: #4ecfe9;
+}
+
+html[data-theme="dark"] .venue-pill {
+  background: #184559;
+  color: #e0f5f9;
+}
+
+html[data-theme="dark"] .paper h3 span {
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .paper p {
+  color: #9cb8c4;
+}
+
+html[data-theme="dark"] .paper .authors {
+  color: #7c9ca9;
+}
+
+html[data-theme="dark"] .paper-links a {
+  background: rgba(26, 165, 191, 0.16);
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .paper-links a:hover {
+  background: #097c94;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .people-section {
+  background: #0d1a24;
+}
+
+html[data-theme="dark"] .people-tabs {
+  background: rgba(18, 37, 49, 0.78);
+  border-color: #213d4d;
+}
+
+html[data-theme="dark"] .people-tab {
+  color: #9ab8c4;
+}
+
+html[data-theme="dark"] .people-tab.is-active {
+  background: #097c94;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .tab-count {
+  background: rgba(56, 192, 220, 0.16);
+  color: #4ecfe9;
+}
+
+html[data-theme="dark"] .people-list .person-card {
+  background: rgba(18, 37, 49, 0.82);
+  border-color: #213d4d;
+}
+
+html[data-theme="dark"] .people-list .person-card:hover {
+  background: #152c3b;
+  border-color: #38c0dc;
+}
+
+html[data-theme="dark"] .person-avatar {
+  border-color: #284b5d;
+  background-color: #132a38;
+}
+
+html[data-theme="dark"] .person-card:hover .person-avatar {
+  border-color: #4ecfe9;
+}
+
+html[data-theme="dark"] .person-icon-link {
+  background: rgba(26, 165, 191, 0.16);
+  color: #4ecfe9 !important;
+}
+
+html[data-theme="dark"] .person-icon-link:hover {
+  background: #097c94 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .person-info small,
+html[data-theme="dark"] .people-more {
+  color: #88a7b5;
+}
+
+html[data-theme="dark"] .contact {
+  background: linear-gradient(135deg, #071720 0%, #0a2230 60%, #0d2b3c 100%);
+  border-top: 1px solid #1c3342;
+}
+
+html[data-theme="dark"] .footer {
+  color: #7d9ba8;
+}
+
+html[data-theme="dark"] .network-art.has-active-node .network-edges line.is-active {
+  stroke: #4ecfe9;
+}
+
+html[data-theme="dark"] .signal-pulse {
+  fill: #38c0dc;
+}
+
+html[data-theme="dark"] .node-dot-hub {
+  fill: #1aa5bf;
+}
+
+html[data-theme="dark"] .node-photo-bg {
+  fill: #132a38;
+}
+
+html[data-theme="dark"] .node-border {
+  stroke: #38c0dc;
+}
+
+html[data-theme="dark"] .network-node.is-active .node-border {
+  stroke: #4ecfe9;
+}
+
+html[data-theme="dark"] .node-ring {
+  stroke: #38c0dc;
 }

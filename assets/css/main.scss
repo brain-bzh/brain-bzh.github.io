@@ -120,3 +120,65 @@ body { font-family: "DM Sans", sans-serif; }
   .news table tr th { padding-right: 0; padding-bottom: .25rem; font-size: .85rem; }
   .news table tr td { padding: 0; }
 }
+
+/* Dark theme overrides for secondary pages (Publications, People) */
+html[data-theme="dark"] {
+  --global-theme-color: #38c0dc;
+  --global-hover-color: #4ecfe9;
+  --global-bg-color: #0b161e;
+  --global-text-color: #e8f3f7;
+  --global-text-color-light: #93b0bd;
+  --global-divider-color: #1c3342;
+  --global-card-bg-color: #122531;
+}
+
+html[data-theme="dark"] .publications .title { color: #e8f3f7; }
+html[data-theme="dark"] .brain-brand { color: #e8f3f7 !important; }
+html[data-theme="dark"] .brain-brand img { filter: brightness(1.14) saturate(1.08); }
+html[data-theme="dark"] .brain-brand-dot { color: #4ecfe9; }
+html[data-theme="dark"] .navbar-institution img { filter: invert(1) hue-rotate(180deg) brightness(1.15); }
+
+html[data-theme="dark"] .team-group-count { background: #132a38; color: #4ecfe9; border-color: #234759; }
+html[data-theme="dark"] .team-members li { background: rgba(18, 37, 49, 0.82); border-color: #213d4d; color: #e8f3f7; }
+html[data-theme="dark"] .team-members li:hover { background: #152c3b; border-color: #38c0dc; box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.45); }
+html[data-theme="dark"] .team-members li a:hover { color: #4ecfe9; }
+html[data-theme="dark"] .member-avatar { border-color: #284b5d; background-color: #132a38; }
+html[data-theme="dark"] .team-members li:hover .member-avatar { border-color: #4ecfe9; }
+html[data-theme="dark"] .member-icon-link { background: rgba(26, 165, 191, 0.16); color: #4ecfe9 !important; }
+html[data-theme="dark"] .member-icon-link:hover { background: #097c94 !important; color: #fff !important; }
+html[data-theme="dark"] .team-members small, html[data-theme="dark"] .directory-source { color: #88a7b5; }
+
+html[data-theme="dark"] .publication-filter-section { background: rgba(18, 37, 49, 0.78); border-color: #213d4d; }
+html[data-theme="dark"] .filter-label { color: #88a7b5; }
+html[data-theme="dark"] .filter-pill { background: #122531; border-color: #254657; color: #d6edf4; }
+html[data-theme="dark"] .filter-pill:hover { background: #173242; border-color: #38c0dc; color: #4ecfe9; }
+html[data-theme="dark"] .filter-pill.is-active { background: #097c94 !important; border-color: #28b5ce !important; color: #ffffff !important; }
+html[data-theme="dark"] .bibsearch-form-input { background: #122531; border-color: #284b5d; color: #e8f3f7; }
+html[data-theme="dark"] .bibsearch-form-input:focus-visible { border-color: #38c0dc; box-shadow: 0 0 0 3px rgba(56, 192, 220, 0.2); }
+
+html[data-theme="dark"] .publication-stats-bar { background: #11232f; border-color: #213d4d; color: #bce2ec; }
+html[data-theme="dark"] .pub-count-dot { background: #38c0dc; }
+html[data-theme="dark"] .pub-reset-btn { background: #122531; border-color: #38c0dc; color: #4ecfe9; }
+html[data-theme="dark"] .pub-reset-btn:hover { background: #097c94; color: #fff; }
+html[data-theme="dark"] .year-bar-count { color: #4ecfe9; }
+html[data-theme="dark"] .year-bar-track { background: rgba(56, 192, 220, 0.16); }
+html[data-theme="dark"] .year-bar-fill { background: #28b5ce; }
+html[data-theme="dark"] .year-bar-btn:hover .year-bar-fill, html[data-theme="dark"] .year-bar-btn.is-active .year-bar-fill { background: #4ecfe9; }
+html[data-theme="dark"] .year-bar-label { color: #88a7b5; }
+
+html[data-theme="dark"] .publications .bibliography > li:hover { background: rgba(18, 37, 49, 0.82); border-left-color: #38c0dc; }
+html[data-theme="dark"] .publications .abbr .badge:not(.arxiv-badge) { background-color: rgba(26, 165, 191, 0.18) !important; color: #67d6ef !important; border: 1px solid rgba(56, 192, 220, 0.26); }
+html[data-theme="dark"] .publication-type { background: #183140; color: #9ec2cf; }
+html[data-theme="dark"] .publication-featured { background: #097c94; color: #fff; }
+html[data-theme="dark"] .publications .abbr .arxiv-badge { background: rgba(190, 65, 50, 0.22); color: #f59a8e; }
+html[data-theme="dark"] .publications .abbr .arxiv-badge:hover { background: rgba(190, 65, 50, 0.35); color: #ffc2ba; }
+
+.toggle-container { display: flex; align-items: center; margin-left: .35rem; }
+.theme-toggle-nav { appearance: none; border: 1px solid var(--global-divider-color); background: rgba(255, 255, 255, 0.55); color: var(--global-text-color-light); width: 32px; height: 32px; padding: 0; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease; }
+.theme-toggle-nav:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); background: rgba(255, 255, 255, 0.9); transform: translateY(-1px); }
+.theme-toggle-nav .theme-icon-sun { display: none; }
+.theme-toggle-nav .theme-icon-moon { display: block; }
+html[data-theme="dark"] .theme-toggle-nav { background: rgba(19, 42, 56, 0.72); border-color: #254558; color: #9ec0ce; }
+html[data-theme="dark"] .theme-toggle-nav:hover { background: #173547; border-color: #4ecfe9; color: #4ecfe9; }
+html[data-theme="dark"] .theme-toggle-nav .theme-icon-moon { display: none; }
+html[data-theme="dark"] .theme-toggle-nav .theme-icon-sun { display: block; }

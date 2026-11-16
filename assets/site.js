@@ -9,6 +9,37 @@
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   // ---------------------------------------------------------------------------
+  // 0. Theme Mode (System Default + Discreet Switch)
+  // ---------------------------------------------------------------------------
+  const darkQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  const themeToggle = document.getElementById('theme-toggle');
+
+  function applyHomepageTheme(setting) {
+    const isDark = setting === 'dark' || (setting === 'system' && darkQuery && darkQuery.matches);
+    document.documentElement.setAttribute('data-theme-setting', setting);
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', isDark ? '#0b161e' : '#f5f9fa');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', nextTheme);
+      applyHomepageTheme(nextTheme);
+    });
+  }
+
+  if (darkQuery) {
+    darkQuery.addEventListener('change', () => {
+      const stored = localStorage.getItem('theme');
+      const setting = stored === 'dark' || stored === 'light' ? stored : 'system';
+      applyHomepageTheme(setting);
+    });
+  }
+
+  // ---------------------------------------------------------------------------
   // 1. Interactive Network Illustration
   // ---------------------------------------------------------------------------
   const svg = document.querySelector('.network-art');
