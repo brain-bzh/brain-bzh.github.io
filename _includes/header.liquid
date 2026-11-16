@@ -1,4 +1,7 @@
 <header>
+  <!-- BRAIN colour themes: tokens + switcher, applied before the page content paints -->
+  <link rel="stylesheet" href="{{ '/assets/css/brain-themes.css' | relative_url }}">
+  <script src="{{ '/assets/js/theme-switcher.js' | relative_url }}"></script>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
@@ -109,6 +112,10 @@
               </button>
             </li>
           {% endif %}
+          <!-- BRAIN colour theme switcher -->
+          <li class="nav-item theme-switcher-item">
+            {% include theme-switcher.liquid %}
+          </li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

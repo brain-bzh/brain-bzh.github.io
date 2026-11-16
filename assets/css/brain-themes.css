@@ -1,0 +1,253 @@
+/*
+ * BRAIN colour themes.
+ *
+ * Shared by the custom homepage (assets/style.css) and the al-folio pages
+ * (assets/css/main.scss). `assets/js/theme-switcher.js` sets
+ * `data-brain-theme` on <html> to "light" (default), "dark" or "green" and
+ * remembers the choice in localStorage. Every page colour should come from
+ * one of the tokens below so that all three themes stay in sync.
+ */
+
+:root,
+html[data-brain-theme="light"] {
+  color-scheme: light;
+
+  /* Text */
+  --ink: #172c37;
+  --ink-2: #214d5e;
+  --ink-soft: #4e6672;
+  --muted: #607580;
+
+  /* Surfaces & lines */
+  --paper: #f5f9fa;
+  --paper-alt: #ebf5f7;
+  --paper-alt-2: #e6f2f5;
+  --surface: #ffffff;
+  --line: #d3e3e8;
+  --line-strong: #c3dde4;
+  --line-hover: #8cc6d4;
+
+  /* Brand */
+  --dark: #123c50;
+  --on-dark: #ffffff;
+  --accent: #087e96;
+  --accent-hover: #075b70;
+  --accent-bright: #1aa5bf;
+  --accent-mid: #28b5ce;
+  --accent-light: #e0f3f7;
+  --on-accent: #ffffff;
+  --lime: #4ecfe9;
+  --art-ink: #286a80;
+  --shadow-color: #123c50;
+
+  /* "Connect" band (always a deep, saturated block) */
+  --contact-1: #0f3242;
+  --contact-2: #123c50;
+  --contact-3: #144960;
+  --contact-ink: #eef8fa;
+  --contact-title: #ffffff;
+  --contact-text: #c7e2e9;
+  --contact-muted: #9ec5d0;
+  --contact-eyebrow: #79d3e6;
+  --contact-accent: #4ecfe9;
+
+  /* Publication labels */
+  --tag-bg: #e5edf0;
+  --tag-ink: #405e69;
+  --featured-bg: #0b6278;
+  --arxiv-bg: #fbe8e5;
+  --arxiv-ink: #8c3025;
+  --arxiv-bg-hover: #f5d6d0;
+  --arxiv-ink-hover: #6d1e17;
+
+  /* Logos are drawn for light backgrounds */
+  --logo-filter: none;
+}
+
+html[data-brain-theme="dark"] {
+  color-scheme: dark;
+
+  --ink: #e3eef1;
+  --ink-2: #c4dce3;
+  --ink-soft: #a7bec6;
+  --muted: #8ea6b0;
+
+  --paper: #0d1a20;
+  --paper-alt: #112129;
+  --paper-alt-2: #0f1e25;
+  --surface: #15262e;
+  --line: #24404b;
+  --line-strong: #2e5260;
+  --line-hover: #3f7f92;
+
+  --dark: #a5e0ee;
+  --on-dark: #0b181e;
+  --accent: #3cc0d8;
+  --accent-hover: #74d7ea;
+  --accent-bright: #5fd3ea;
+  --accent-mid: #4cc8de;
+  --accent-light: #143844;
+  --on-accent: #06212a;
+  --lime: #7fe3f5;
+  --art-ink: #8fd0e0;
+  --shadow-color: #000000;
+
+  --contact-1: #071419;
+  --contact-2: #0a1d25;
+  --contact-3: #0d2731;
+  --contact-ink: #e3f1f4;
+  --contact-title: #ffffff;
+  --contact-text: #b6d3db;
+  --contact-muted: #8fb3bd;
+  --contact-eyebrow: #79d3e6;
+  --contact-accent: #4ecfe9;
+
+  --tag-bg: #1d333c;
+  --tag-ink: #b3c9d0;
+  --featured-bg: #3cc0d8;
+  --arxiv-bg: #3f211c;
+  --arxiv-ink: #f4b4a9;
+  --arxiv-bg-hover: #522a23;
+  --arxiv-ink-hover: #ffd0c7;
+
+  /* Black linework becomes white, the cyan stays roughly cyan */
+  --logo-filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-brain-theme="green"] {
+  color-scheme: light;
+
+  --ink: #1a2e21;
+  --ink-2: #24503a;
+  --ink-soft: #4d6957;
+  --muted: #5f7868;
+
+  --paper: #f4f8f2;
+  --paper-alt: #eaf3e6;
+  --paper-alt-2: #e3efde;
+  --surface: #ffffff;
+  --line: #d3e4d0;
+  --line-strong: #c0d9bc;
+  --line-hover: #92c599;
+
+  --dark: #17402b;
+  --on-dark: #ffffff;
+  --accent: #2e7d32;
+  --accent-hover: #1f5e24;
+  --accent-bright: #43a047;
+  --accent-mid: #5bb85f;
+  --accent-light: #e2f1df;
+  --on-accent: #ffffff;
+  --lime: #8bd17c;
+  --art-ink: #2f6b3c;
+  --shadow-color: #17402b;
+
+  --contact-1: #0f2e1d;
+  --contact-2: #17402b;
+  --contact-3: #1c4a31;
+  --contact-ink: #eef8f0;
+  --contact-title: #ffffff;
+  --contact-text: #c8e3cd;
+  --contact-muted: #a0c6a8;
+  --contact-eyebrow: #a3dc95;
+  --contact-accent: #8bd17c;
+
+  --tag-bg: #e4ede3;
+  --tag-ink: #415e49;
+  --featured-bg: #24682a;
+  --arxiv-bg: #fbe8e5;
+  --arxiv-ink: #8c3025;
+  --arxiv-bg-hover: #f5d6d0;
+  --arxiv-ink-hover: #6d1e17;
+
+  --logo-filter: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* Theme switcher                                                   */
+/* ---------------------------------------------------------------- */
+
+.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  flex: 0 0 auto;
+}
+
+.theme-choice {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.theme-choice:hover {
+  transform: scale(1.08);
+}
+
+.theme-choice:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-choice[aria-checked="true"] {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.theme-swatch {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+/* Each swatch previews its theme, so these colours are fixed on purpose */
+.theme-choice[data-theme-choice="light"] .theme-swatch {
+  background: linear-gradient(135deg, #f5f9fa 0 50%, #087e96 50% 100%);
+}
+
+.theme-choice[data-theme-choice="dark"] .theme-swatch {
+  background: linear-gradient(135deg, #0d1a20 0 50%, #3cc0d8 50% 100%);
+}
+
+.theme-choice[data-theme-choice="green"] .theme-swatch {
+  background: linear-gradient(135deg, #f4f8f2 0 50%, #2e7d32 50% 100%);
+}
+
+html[data-brain-theme="dark"] .theme-swatch {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.theme-switcher .theme-choice-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Logos */
+.brain-logo,
+.institution-logo img,
+.brain-brand img,
+.navbar-institution img {
+  filter: var(--logo-filter);
+}

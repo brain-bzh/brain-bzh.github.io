@@ -32,6 +32,10 @@ The Pages workflow builds the Jekyll site with Ruby 3.3 and deploys on pushes to
 
 `assets/img/brain-logo.svg` is a vector conversion of the team-provided BRAIN logo PDF; its page was cropped around the artwork. `assets/img/imt-atlantique.svg` is the transparent RGB logo for light backgrounds from [IMT Atlantique's official logo page](https://www.imt-atlantique.fr/en/about/logos). The homepage's own header is in `index.html`; the other pages use a local override of al-folio's `_includes/header.liquid`. Both that override and the custom `assets/css/main.scss` are recorded in `.al-folio-overrides.yml` for upgrade reviews.
 
+### Colour themes
+
+Visitors can switch between a light (default), dark and green theme with the three swatches in the header; the choice is saved in the browser. The palettes are CSS custom properties in `assets/css/brain-themes.css`, set by `assets/js/theme-switcher.js` through `data-brain-theme` on `<html>`. The switcher markup is `_includes/theme-switcher.liquid`, used by both the homepage and the al-folio header. Use these tokens (`var(--accent)`, `var(--ink)`, …) rather than hard-coded colours in `assets/style.css` and `assets/css/main.scss`, so that new styles work in all three themes.
+
 ### Venue badges and publication search
 
 `data/featured-venues.json` provides venue abbreviations and colors. Conference and journal records with venue metadata receive a colored venue badge (`ABBR` and `VENUECOLOR`). The initial list is a starting point for team review, not an objective ranking. Workshops, Findings and related tracks are excluded from automatic conference matches. HAL metadata may be incomplete or inaccurate; a badge is a venue match, not independent verification of acceptance. After changing the list, rerun `python3 scripts/update_hal.py` and review the generated differences. The homepage's selected work remains independently curated.
