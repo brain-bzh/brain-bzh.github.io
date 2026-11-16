@@ -1,11 +1,12 @@
 # Former members, alphabetical by last name.
 # Sources: IMT Atlantique team page (former students) and theses.fr (PhDs
 # defended under a BRAIN permanent member's (co-)supervision).
-# Optional fields: phd (defence year), scholar, linkedin, website.
+# Optional fields: phd (defence year), role (shown when there is no phd), scholar, linkedin, website.
 # hal: false hides the Publications link when HAL has no record under the name.
 - name: Aymane Abdali
   phd: 2025
 - name: Ala Aboudib
+  phd: 2016
   scholar: https://scholar.google.fr/citations?user=bUzrnk4AAAAJ
   hal: false
 - name: Raphael Baena
@@ -14,8 +15,10 @@
   phd: 2024
 - name: Bartosz Boguslawski
 - name: Myriam Bontonou
+  phd: 2021
   scholar: https://scholar.google.com/citations?user=2fL-XtoAAAAJ
 - name: Ghouthi Boukli Hacene
+  phd: 2019
   scholar: https://scholar.google.com/citations?user=FwjpGsgAAAAJ
 - name: Robin Danilo
   phd: 2018
@@ -29,6 +32,7 @@
   phd: 2025
   hal: false
 - name: Lucas Grativol
+  phd: 2024
 - name: Yuqing Hu
   phd: 2022
 - name: Karl La Grassa
@@ -41,8 +45,10 @@
   scholar: https://scholar.google.fr/citations?user=3d-q-rwAAAAJ
   hal: false
 - name: Carlos Lassance
+  phd: 2020
   scholar: https://scholar.google.fr/citations?user=UnUYWp0AAAAJ
 - name: Hugo Le Blevec
+  role: Postdoc
 - name: Timotée Ly-Manson
 - name: Ilyass Moummad
   phd: 2024
@@ -50,4 +56,5 @@
   phd: 2023
   scholar: https://scholar.google.com/citations?user=RiBJSEQAAAAJ
 - name: Jean-Charles Vialatte
+  phd: 2018
   scholar: https://scholar.google.com/citations?user=D_pgupUAAAAJ
