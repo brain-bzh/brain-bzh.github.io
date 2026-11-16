@@ -20,8 +20,9 @@ BRAIN_STRUCTURES = {1149551, 1251172}
 API = 'https://api.hal.science/search/'
 PAGE_SIZE = 100
 BIBTEX_BATCH = 50
-FIELDS = ('halId_s,title_s,authFullName_s,producedDateY_i,docType_s,uri_s,conferenceTitle_s,'
-          'journalTitle_s,doiId_s,arxivId_s,structId_i,authIdHasStructure_fs')
+FIELDS = ('halId_s,title_s,authFullName_s,producedDateY_i,producedDate_s,publicationDate_s,docType_s,uri_s,'
+          'conferenceTitle_s,journalTitle_s,doiId_s,arxivId_s,structId_i,authIdHasStructure_fs')
+MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
 
 def load_members():
@@ -57,6 +58,34 @@ def member_affiliated(doc, members, structures):
 
 def is_team_record(doc, members, structures):
     return bool(BRAIN_STRUCTURES & set(doc.get('structId_i', []))) or member_affiliated(doc, members, structures)
+
+
+def fix_preprint_date(doc):
+    """Date a preprint by its publication, not by its HAL deposit.
+
+    For a HAL preprint (UNDEFINED), producedDate_s is often the deposit date:
+    an arXiv paper of 2017 imported in 2026 would be listed in 2026. Its
+    publicationDate_s keeps the real date; take it when it is earlier. Returns
+    (year, month or None) when the date changed, else None.
+    """
+    produced, published = doc.get('producedDate_s', ''), doc.get('publicationDate_s', '')
+    if doc.get('docType_s') != 'UNDEFINED' or not re.match(r'\d{4}', published) or published >= produced:
+        return None
+    year = int(published[:4])
+    month = int(published[5:7]) if re.match(r'\d{4}-\d{2}', published) else None
+    doc['producedDateY_i'], doc['producedDate_s'] = year, published
+    return year, month
+
+
+def redate_bibtex(entry, date):
+    """Rewrite YEAR and MONTH of a HAL BibTeX entry."""
+    year, month = date
+    entry = re.sub(r'^(\s*YEAR\s*=\s*)\{\d{4}\}', lambda m: f'{m.group(1)}{{{year}}}', entry, flags=re.M | re.I)
+    entry = re.sub(r'^\s*MONTH\s*=.*\n', '', entry, flags=re.M | re.I)
+    if month:
+        entry = re.sub(r'^(\s*)(YEAR\s*=.*\n)', lambda m: f'{m.group(1)}{m.group(2)}{m.group(1)}MONTH = {MONTHS[month - 1].capitalize()},\n',
+                       entry, count=1, flags=re.M | re.I)
+    return entry
 
 
 def request(query, **params):
@@ -120,9 +149,10 @@ def arxiv_id(doc, overrides):
     return value
 
 
-def annotate_bibtex(bib, docs, rules, overrides=None):
+def annotate_bibtex(bib, docs, rules, overrides=None, redated=None):
     """Add al-folio fields by HAL ID, not by relying on export ordering."""
     overrides = overrides or {}
+    redated = redated or {}
     by_id = {doc['halId_s']: doc for doc in docs}
     entries = re.split(r'(?=^@\w+\s*\{)', bib.strip(), flags=re.M)
     annotated, found = [], set()
@@ -132,6 +162,8 @@ def annotate_bibtex(bib, docs, rules, overrides=None):
             raise ValueError('HAL JSON and BibTeX IDs do not agree; existing output preserved')
         hal_id = match.group(1)
         found.add(hal_id)
+        if hal_id in redated:
+            entry = redate_bibtex(entry, redated[hal_id])
         entry = re.sub(r'^(  URL = \{(https?://[^}]+)\},)$', r'\1\n  HTML = {\2},', entry, flags=re.M)
         doc_type = by_id[hal_id].get('docType_s', '')
         if not re.fullmatch(r'[A-Z_]*', doc_type):
@@ -168,6 +200,13 @@ def main():
             raise ValueError('HAL result count changed or page incomplete; existing output preserved')
         candidates.extend(result['docs'])
     docs = [d for d in candidates if is_team_record(d, members, structures)]
+    redated = {}
+    for d in docs:
+        date = fix_preprint_date(d)
+        if date:
+            redated[d['halId_s']] = date
+    # A redated preprint may now predate the team.
+    docs = [d for d in docs if d['producedDateY_i'] >= first_year]
     ids = [d.get('halId_s') for d in docs]
     if not docs or None in ids or len(set(ids)) != len(docs):
         raise ValueError('Duplicate or missing HAL IDs; existing output preserved')
@@ -180,18 +219,21 @@ def main():
                       wt='bibtex', rows=len(batch))
         if len(re.findall(r'^@\w+\s*\{', bib, re.M)) != len(batch):
             raise ValueError('HAL BibTeX batch incomplete; existing output preserved')
-        chunks.append(annotate_bibtex(bib, batch, rules, overrides))
+        chunks.append(annotate_bibtex(bib, batch, rules, overrides, redated))
     # Keep the JSON export as before: matching logic fields are only needed here.
     for d in docs:
         d.pop('structId_i', None)
         d.pop('authIdHasStructure_fs', None)
+        d.pop('producedDate_s', None)
+        d.pop('publicationDate_s', None)
     output = ROOT / 'data'
     output.mkdir(exist_ok=True)
     (output / 'hal-publications.json').write_text(json.dumps(docs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     (ROOT / '_bibliography').mkdir(exist_ok=True)
     (ROOT / '_bibliography' / 'papers.bib').write_text('\n\n'.join(chunks) + '\n', encoding='utf-8')
     print(f'Downloaded {len(docs)} HAL records since {first_year} ({len(candidates) - len(docs)} candidates rejected); '
-          f'badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues.')
+          f'badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues; '
+          f'{len(redated)} preprints dated by publication instead of HAL deposit.')
 
 
 if __name__ == '__main__':
