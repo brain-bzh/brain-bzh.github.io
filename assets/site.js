@@ -228,16 +228,85 @@
       if (event.pointerType === 'touch') updatePointer(event);
     });
 
-    // Click node to navigate to researcher's publications or section
+    // Member nodes open a small menu of links; other nodes navigate directly.
+    // The menu lives in <body> so the graph frame (overflow: hidden) cannot clip it.
+    const menu = document.createElement('div');
+    menu.className = 'node-menu';
+    menu.hidden = true;
+    document.body.appendChild(menu);
+
+    function memberLinks(node) {
+      const d = node.element.dataset;
+      return [
+        ['Website', d.website, true],
+        ['Google Scholar', d.scholar, true],
+        ['Publications', d.pubs, false],
+      ].filter(([, url]) => url);
+    }
+
+    function closeMenu() {
+      menu.hidden = true;
+    }
+
+    function openMenu(node, focusFirst) {
+      menu.replaceChildren();
+      const name = document.createElement('p');
+      name.className = 'node-menu-name';
+      name.textContent = node.name;
+      menu.appendChild(name);
+      memberLinks(node).forEach(([label, url, external]) => {
+        const a = document.createElement('a');
+        a.href = url;
+        a.textContent = label;
+        if (external) {
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+        }
+        menu.appendChild(a);
+      });
+      const nodeBox = node.element.getBoundingClientRect();
+      menu.hidden = false;
+      const left = Math.min(
+        Math.max(nodeBox.left + nodeBox.width / 2 - menu.offsetWidth / 2, 8),
+        document.documentElement.clientWidth - menu.offsetWidth - 8
+      );
+      const below = nodeBox.bottom + 6;
+      const top = below + menu.offsetHeight > window.innerHeight - 8 ? nodeBox.top - menu.offsetHeight - 6 : below;
+      menu.style.left = `${left + window.scrollX}px`;
+      menu.style.top = `${top + window.scrollY}px`;
+      if (focusFirst) {
+        const first = menu.querySelector('a');
+        if (first) first.focus();
+      }
+    }
+
+    function activate(node, index, fromKeyboard) {
+      if (memberLinks(node).length) {
+        setActive(index);
+        openMenu(node, fromKeyboard);
+      } else if (node.href) {
+        window.location.href = node.href;
+      } else {
+        setActive(index);
+      }
+    }
+
     nodes.forEach((node, index) => {
       node.element.addEventListener('click', (event) => {
         event.stopPropagation();
-        if (node.href) {
-          window.location.href = node.href;
-        } else {
-          setActive(index);
-        }
+        activate(node, index, false);
       });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!menu.hidden && !menu.contains(event.target)) closeMenu();
+    });
+    window.addEventListener('resize', closeMenu);
+    menu.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+        svg.focus();
+      }
     });
 
     svg.addEventListener('focus', () => {
@@ -251,14 +320,15 @@
     });
     svg.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
+        closeMenu();
         pointer = null;
         setActive(-1);
         schedule();
         return;
       }
-      if ((event.key === 'Enter' || event.key === ' ') && active >= 0 && nodes[active].href) {
+      if ((event.key === 'Enter' || event.key === ' ') && active >= 0) {
         event.preventDefault();
-        window.location.href = nodes[active].href;
+        activate(nodes[active], active, true);
         return;
       }
       const delta = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[event.key];
