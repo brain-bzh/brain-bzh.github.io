@@ -4,6 +4,7 @@
 # Optional fields: phd (defence year), role (shown when there is no phd), scholar, linkedin, website.
 # hal: false hides the Publications link when HAL has no record under the name.
 - name: Aymane Abdali
+  scholar: https://scholar.google.com/citations?user=QsG2A04AAAAJ
   linkedin: https://www.linkedin.com/in/aymane-abdali-0a84a714a/
   phd: 2025
 - name: Ala Aboudib
@@ -12,9 +13,11 @@
   scholar: https://scholar.google.fr/citations?user=bUzrnk4AAAAJ
   hal: false
 - name: Raphael Baena
+  scholar: https://scholar.google.com/citations?user=8MU98WQAAAAJ
   linkedin: https://www.linkedin.com/in/raphael-baena/
   phd: 2023
 - name: Yassir Bendou
+  scholar: https://scholar.google.com/citations?user=Hfzg6rcAAAAJ
   linkedin: https://www.linkedin.com/in/yassir-bendou/
   phd: 2024
 - name: Bartosz Boguslawski
@@ -31,10 +34,12 @@
   phd: 2018
   hal: false
 - name: Rodrigue Dubon
+  scholar: https://scholar.google.com/citations?user=dn0h91gAAAAJ
   linkedin: https://www.linkedin.com/in/dubonr/
   phd: 2025
   hal: false
 - name: Yassine El Ouahidi
+  scholar: https://scholar.google.com/citations?user=BGZsbNgAAAAJ
   linkedin: https://www.linkedin.com/in/elouahidi-y/
   phd: 2025
 - name: Maëlle Freteault
@@ -42,18 +47,22 @@
   phd: 2025
   hal: false
 - name: Lucas Grativol
+  scholar: https://scholar.google.com/citations?user=Pf65x3EAAAAJ
   linkedin: https://www.linkedin.com/in/lucas-grativol-ribeiro/
   phd: 2024
 - name: Yuqing Hu
+  scholar: https://scholar.google.com/citations?user=3iJVyFMAAAAJ
   linkedin: https://www.linkedin.com/in/yuqing-hu/
   phd: 2022
 - name: Karl La Grassa
   linkedin: https://www.linkedin.com/in/klagrassa/
   phd: 2026
 - name: Raphael Lafargue
+  scholar: https://scholar.google.com/citations?user=SbgHbt8AAAAJ
   linkedin: https://www.linkedin.com/in/rapha%C3%ABl-lafargue-0a33431b9/
   phd: 2024
 - name: Alix Lamouroux
+  scholar: https://scholar.google.com/citations?user=EowoUcYAAAAJ
   linkedin: https://www.linkedin.com/in/alix-lamouroux/
   phd: 2025
 - name: Benoit Larras
@@ -65,12 +74,14 @@
   phd: 2020
   scholar: https://scholar.google.fr/citations?user=UnUYWp0AAAAJ
 - name: Hugo Le Blevec
+  scholar: https://scholar.google.com/citations?user=GJwQip0AAAAJ
   linkedin: https://www.linkedin.com/in/hugo-le-blevec/
   phd: 2024
 - name: Timotée Ly-Manson
   linkedin: https://www.linkedin.com/in/timot%C3%A9e-ly-manson-3a3267155/
   phd: 2026
 - name: Ilyass Moummad
+  scholar: https://scholar.google.com/citations?user=2hA2XZcAAAAJ
   linkedin: https://www.linkedin.com/in/ilyass-moummad/
   phd: 2024
 - name: Hugo Tessier
