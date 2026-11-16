@@ -1,0 +1,3 @@
+{%- for group in site.data.people -%}{%- for member in group.members -%}{%- if member.name == include.name -%}
+ data-website="{{ member.website }}" data-scholar="{{ member.scholar }}" data-pubs="{{ '/publications/' | relative_url }}#{{ member.name | uri_escape }}"
+{%- endif -%}{%- endfor -%}{%- endfor -%}

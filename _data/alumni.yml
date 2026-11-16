@@ -1,0 +1,20 @@
+# Former members. Optional fields: scholar, linkedin, website.
+# hal: false hides the Publications link when HAL has no record under the name.
+- name: Ala Aboudib
+  scholar: https://scholar.google.fr/citations?user=bUzrnk4AAAAJ
+  hal: false
+- name: Raphael Baena
+- name: Bartosz Boguslawski
+- name: Myriam Bontonou
+  scholar: https://scholar.google.com/citations?user=2fL-XtoAAAAJ
+- name: Ghouthi Boukli Hacene
+  scholar: https://scholar.google.com/citations?user=FwjpGsgAAAAJ
+- name: Benoit Larras
+  scholar: https://scholar.google.fr/citations?user=3d-q-rwAAAAJ
+  hal: false
+- name: Carlos Lassance
+  scholar: https://scholar.google.fr/citations?user=UnUYWp0AAAAJ
+- name: Hugo Tessier
+  scholar: https://scholar.google.com/citations?user=RiBJSEQAAAAJ
+- name: Jean-Charles Vialatte
+  scholar: https://scholar.google.com/citations?user=D_pgupUAAAAJ

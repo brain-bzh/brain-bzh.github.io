@@ -29,6 +29,11 @@ nav_order: 1
         {% endfor %}
       </optgroup>
       {% endfor %}
+      <optgroup label="Alumni">
+        {% for member in site.data.alumni %}{% unless member.hal == false %}
+        <option value="{{ member.name | escape }}">{{ member.name }}</option>
+        {% endunless %}{% endfor %}
+      </optgroup>
     </select>
     <label class="sr-only" for="bibsearch">Search publications</label>
     <input type="search" id="bibsearch" class="pub-search" spellcheck="false" autocomplete="off" placeholder="Search titles, authors, venues, years">
