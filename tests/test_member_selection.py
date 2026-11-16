@@ -41,7 +41,7 @@ class MemberSelectionTests(unittest.TestCase):
         members, structures, first_year = hal.load_members()
         self.assertEqual(len(members), 6)
         self.assertIn(481355, structures)
-        self.assertGreaterEqual(first_year, 2018)
+        self.assertEqual(first_year, 2017)
 
 
 if __name__ == '__main__':

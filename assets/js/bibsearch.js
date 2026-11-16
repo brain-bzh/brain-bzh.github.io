@@ -35,11 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const barHeight = (count, max) => (count > 0 ? Math.max(16, Math.round((count / max) * 100)) : 0);
 
-  if (yearChartEl && yearSections.length > 0) {
-    const maxYearTotal = Math.max(...yearSections.map((y) => y.total), 1);
-    // Display chronologically left-to-right (oldest to newest)
-    [...yearSections]
-      .slice(0, 10)
+  // The chart shows the last eight years plus the current one, oldest to newest.
+  const firstChartYear = new Date().getFullYear() - 8;
+  const chartSections = yearSections.filter((sec) => parseInt(sec.year, 10) >= firstChartYear);
+
+  if (yearChartEl && chartSections.length > 0) {
+    const maxYearTotal = Math.max(...chartSections.map((y) => y.total), 1);
+    [...chartSections]
       .reverse()
       .forEach((sec) => {
         const btn = document.createElement("button");
@@ -82,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (yearChartEl) {
       // Redraw the bars from the entries matching the current filter.
       const visibleByYear = new Map(
-        yearSections.map((sec) => [sec.year, [...sec.items].filter((el) => !el.classList.contains("unloaded")).length])
+        chartSections.map((sec) => [sec.year, [...sec.items].filter((el) => !el.classList.contains("unloaded")).length])
       );
       const maxVisible = Math.max(...visibleByYear.values(), 1);
       yearChartEl.querySelectorAll(".year-bar-btn").forEach((btn) => {

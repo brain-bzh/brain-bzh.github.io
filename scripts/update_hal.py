@@ -5,13 +5,12 @@ A record is kept when it is attached to the BRAIn HAL structure, or when a
 permanent member (data/hal-members.json) is an author and is personally
 affiliated with Lab-STICC or IMT Atlantique on it. This recovers work from
 before the BRAIn structure existed (2023) or published elsewhere in the lab.
-Only the last `years_back` years are kept.
+Nothing before the team's creation (`first_year`, 2017) is kept.
 """
 import hashlib
 import json
 import re
 import sys
-import datetime
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -29,7 +28,7 @@ def load_members():
     config = json.loads((ROOT / 'data' / 'hal-members.json').read_text(encoding='utf-8'))
     members = {int(v) for v in config['members'].values()}
     structures = {int(k) for k in config['affiliation_structures']}
-    first_year = datetime.date.today().year - int(config['years_back'])
+    first_year = int(config['first_year'])
     return members, structures, first_year
 
 

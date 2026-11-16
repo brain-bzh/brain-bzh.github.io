@@ -18,6 +18,118 @@
   },
   {
     "title_s": [
+      "Memory vectors for similarity search in high-dimensional spaces"
+    ],
+    "journalTitle_s": "IEEE Transactions on Big Data",
+    "authFullName_s": [
+      "Ahmet Iscen",
+      "Teddy Furon",
+      "Vincent Gripon",
+      "Michael Rabbat",
+      "Hervé Jégou"
+    ],
+    "halId_s": "hal-01481220",
+    "uri_s": "https://inria.hal.science/hal-01481220v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1109/TBDATA.2017.2677964",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Finding All Matches in a Database using Binary Neural Networks"
+    ],
+    "conferenceTitle_s": "COGNITIVE 2017: The Ninth International Conference on Advanced Cognitive Technologies and Applications",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-01522646",
+    "uri_s": "https://hal.science/hal-01522646v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Performance of Neural Clique Networks Subject to Synaptic Noise"
+    ],
+    "conferenceTitle_s": "COGNITIVE 2017 : The Ninth International Conference on Advanced Cognitive Technologies and Applications",
+    "authFullName_s": [
+      "Eliott Coyac",
+      "Vincent Gripon",
+      "Charlotte Langlais",
+      "Claude Berrou"
+    ],
+    "halId_s": "hal-01522729",
+    "uri_s": "https://hal.science/hal-01522729v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "An Intrinsic Difference Between Vanilla RNNs and GRU Models"
+    ],
+    "conferenceTitle_s": "COGNITIVE 2017 : Ninth International Conference on Advanced Cognitive Technologies and Applications",
+    "authFullName_s": [
+      "Tristan Stérin",
+      "Nicolas Farrugia",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-01522887",
+    "uri_s": "https://hal.science/hal-01522887v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Tropical Graph Signal Processing"
+    ],
+    "authFullName_s": [
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-01527695",
+    "uri_s": "https://hal.science/hal-01527695v2",
+    "docType_s": "UNDEFINED",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "NoC-MRAM Architecture for Memory-Based Computing: database-search case study"
+    ],
+    "conferenceTitle_s": "NEWCAS 2017 : 15th IEEE International New Circuits and Systems Conference",
+    "authFullName_s": [
+      "Mostafa Rizk",
+      "Jean-Philippe Diguet",
+      "Naoya Onizawa",
+      "Amer Baghdadi",
+      "Martha Johanna Sepulveda Florez",
+      "Yeter Akgul",
+      "Vincent Gripon",
+      "Takahiro Hanyu"
+    ],
+    "halId_s": "hal-01528137",
+    "uri_s": "https://hal.science/hal-01528137v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/NEWCAS.2017.8010167",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Perception et imagerie mentale musicale : que peut nous dire la musique sur le fonctionnement du cerveau ?"
+    ],
+    "conferenceTitle_s": "3èmes Journées Perception Sonore",
+    "authFullName_s": [
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-01559181",
+    "uri_s": "https://univ-brest.hal.science/hal-01559181v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
       "SimiNet: a Novel Method for Quantifying Brain Network Similarity"
     ],
     "journalTitle_s": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
@@ -35,6 +147,149 @@
     "doiId_s": "10.1109/TPAMI.2017.2750160",
     "arxivId_s": "1709.07211",
     "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Translation sur graphe avec préservation du voisinage"
+    ],
+    "conferenceTitle_s": "GRETSI 2017 : 26ème colloque du Groupement de Recherche en Traitement du Signal et des Images",
+    "authFullName_s": [
+      "Nicolas Grelier",
+      "Bastien Pasdeloup",
+      "Jean-Charles Vialatte",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-01617209",
+    "uri_s": "https://hal.science/hal-01617209v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Budget Restricted Incremental Learning with Pre-Trained Convolutional Neural Networks and Binary Associative Memories"
+    ],
+    "conferenceTitle_s": "SIPS 2017 : IEEE International Workshop on Signal Processing Systems",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-01656152",
+    "uri_s": "https://hal.science/hal-01656152v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/SiPS.2017.8109978",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Incremental Learning on Chip"
+    ],
+    "conferenceTitle_s": "GlobalSIP 2017 : 5th IEEE Global Conference on Signal and Information Processing",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-01754847",
+    "uri_s": "https://hal.science/hal-01754847v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/GlobalSIP.2017.8309068",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Characterization and Inference of Graph Diffusion Processes from Observations of Stationary Signals"
+    ],
+    "journalTitle_s": "IEEE Transactions on Signal and Information Processing over Networks",
+    "authFullName_s": [
+      "Bastien Pasdeloup",
+      "Vincent Gripon",
+      "Grégoire Mercier",
+      "Dominique Pastor",
+      "Michael Rabbat"
+    ],
+    "halId_s": "hal-01759090",
+    "uri_s": "https://hal.science/hal-01759090v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1109/TSIPN.2017.2742940",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Evaluating Graph Signal Processing for Neuroimaging Through Classification and Dimensionality Reduction"
+    ],
+    "conferenceTitle_s": "GlobalSIP 2017 :  5th IEEE Global Conference on Signal and Information Processing",
+    "authFullName_s": [
+      "Mathilde Menoret",
+      "Nicolas Farrugia",
+      "Bastien Pasdeloup",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-01761345",
+    "uri_s": "https://hal.science/hal-01761345v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/GlobalSIP.2017.8309033",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "BAASTA: Battery for the Assessment of Auditory Sensorimotor and Timing Abilities"
+    ],
+    "journalTitle_s": "Behavior Research Methods",
+    "authFullName_s": [
+      "Simone Dalla Bella",
+      "Nicolas Farrugia",
+      "Charles-Etienne Benoit",
+      "Valentin Bégel",
+      "Laura Verga",
+      "Eleanor Harding",
+      "Sonja Kotz"
+    ],
+    "halId_s": "hal-01771545",
+    "uri_s": "https://imt-atlantique.hal.science/hal-01771545v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3758/s13428-016-0773-6",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Gait improvement via rhythmic stimulation in Parkinson’s disease is linked to rhythmic skills"
+    ],
+    "journalTitle_s": "Scientific Reports",
+    "authFullName_s": [
+      "Simone Dalla Bella",
+      "Charles-Etienne Benoit",
+      "Nicolas Farrugia",
+      "Peter Keller",
+      "Hellmuth Obrig",
+      "Stefan Mainka",
+      "Sonja Kotz"
+    ],
+    "halId_s": "hal-01771575",
+    "uri_s": "https://imt-atlantique.hal.science/hal-01771575v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1038/srep42005",
+    "producedDateY_i": 2017
+  },
+  {
+    "title_s": [
+      "Learning local receptive fields and their weight sharing scheme on graphs"
+    ],
+    "conferenceTitle_s": "2017 IEEE Global Conference on Signal and Information Processing (GlobalSIP)",
+    "authFullName_s": [
+      "Jean-Charles Vialatte",
+      "Vincent Gripon",
+      "Gilles Coppin"
+    ],
+    "halId_s": "hal-01773846",
+    "uri_s": "https://hal.science/hal-01773846v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/GlobalSIP.2017.8309034",
+    "producedDateY_i": 2017
   },
   {
     "title_s": [
@@ -69,6 +324,20 @@
     "docType_s": "ART",
     "doiId_s": "10.3758/s13421-018-0792-x",
     "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Tropical graph signal processing"
+    ],
+    "conferenceTitle_s": "2017 51st Asilomar Conference on Signals, Systems, and Computers",
+    "authFullName_s": [
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-01875913",
+    "uri_s": "https://hal.science/hal-01875913v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ACSSC.2017.8335134",
+    "producedDateY_i": 2017
   },
   {
     "title_s": [
@@ -4938,6 +5207,20 @@
     "uri_s": "https://inserm.hal.science/inserm-05576211v1",
     "docType_s": "COMM",
     "producedDateY_i": 2025
+  },
+  {
+    "title_s": [
+      "Extending convolutional neural networks to irregular domains through graph inference",
+      "Extension des réseaux de neurones convolutifs à des domaines irréguliers par l’inférence de graphe"
+    ],
+    "authFullName_s": [
+      "Bastien Pasdeloup"
+    ],
+    "halId_s": "tel-01708824",
+    "uri_s": "https://theses.hal.science/tel-01708824v2",
+    "docType_s": "THESE",
+    "doiId_s": "10.70675/64541302z970cz465fzb3e4zb3017ffb0bd5",
+    "producedDateY_i": 2017
   },
   {
     "title_s": [
