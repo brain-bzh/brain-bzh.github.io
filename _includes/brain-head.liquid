@@ -1,0 +1,19 @@
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/brain-logo.svg' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+
+  <!-- Styles & Scripts -->
+  <script>
+    (() => {
+      const stored = localStorage.getItem('theme');
+      const setting = stored === 'dark' || stored === 'light' ? stored : 'system';
+      const isDark =
+        setting === 'dark' ||
+        (setting === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.setAttribute('data-theme-setting', setting);
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <script src="{{ '/assets/site.js' | relative_url }}" defer></script>

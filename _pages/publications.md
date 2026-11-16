@@ -1,48 +1,42 @@
 ---
-layout: page
+layout: brain
 permalink: /publications/
 title: Publications
-description: Research from the BRAIN team indexed in HAL.
+description: Publications of the BRAIN team, refreshed weekly from HAL.
+stylesheet: /assets/publications.css
+module: /assets/js/bibsearch.js
 nav: true
 nav_order: 1
 ---
-
-The bibliography below is refreshed from HAL. Use the quick filter pills or enter keywords in the search bar.
-It includes records associated with the team's HAL structures; some work may be missing if its affiliation is not recorded in HAL.
-
-<div class="publication-filter-section" id="publication-filters">
+<div class="pub-tools">
   <div class="filter-row">
-    <span class="filter-label">Venues/Topics:</span>
+    <span class="filter-label">Topics</span>
     <div class="filter-pills">
       <button type="button" class="filter-pill is-active" data-term="">All</button>
-      <button type="button" class="filter-pill" data-term="NeurIPS">NeurIPS</button>
-      <button type="button" class="filter-pill" data-term="CVPR">CVPR</button>
-      <button type="button" class="filter-pill" data-term="ICASSP">ICASSP</button>
-      <button type="button" class="filter-pill" data-term="EUSIPCO">EUSIPCO</button>
-      <button type="button" class="filter-pill" data-term="TMLR">TMLR</button>
-      <button type="button" class="filter-pill" data-term="Few-Shot">Few-Shot</button>
-      <button type="button" class="filter-pill" data-term="EEG">EEG</button>
+      {% for theme in site.data.themes.themes %}
+      <button type="button" class="filter-pill" data-term="{{ theme.label | escape }}">{{ theme.label }}</button>
+      {% endfor %}
     </div>
   </div>
   <div class="filter-row">
-    <span class="filter-label">Authors:</span>
-    <div class="filter-pills">
-      <button type="button" class="filter-pill" data-term="Gripon">V. Gripon</button>
-      <button type="button" class="filter-pill" data-term="Farrugia">N. Farrugia</button>
-      <button type="button" class="filter-pill" data-term="Pasdeloup">B. Pasdeloup</button>
-      <button type="button" class="filter-pill" data-term="Lioi">G. Lioi</button>
-      <button type="button" class="filter-pill" data-term="Leonardon">M. Léonardon</button>
-      <button type="button" class="filter-pill" data-term="Marmoret">A. Marmoret</button>
-    </div>
+    <label class="filter-label" for="author-filter">Author</label>
+    <select id="author-filter" class="pub-select">
+      <option value="">Anyone</option>
+      {% for group in site.data.people %}
+      <optgroup label="{{ group.group | escape }}">
+        {% for member in group.members %}
+        <option value="{{ member.name | escape }}">{{ member.name }}</option>
+        {% endfor %}
+      </optgroup>
+      {% endfor %}
+    </select>
+    <label class="sr-only" for="bibsearch">Search publications</label>
+    <input type="search" id="bibsearch" class="pub-search" spellcheck="false" autocomplete="off" placeholder="Search titles, authors, venues, years">
   </div>
 </div>
 
-<label for="bibsearch" class="publication-search-label">Search publications</label>
-{% include bib_search.liquid %}
-
 <div class="publication-stats-bar" id="publication-stats-bar" aria-live="polite">
   <div class="pub-count-status">
-    <span class="pub-count-dot"></span>
     <span id="pub-count-text">Loading publications…</span>
     <button type="button" class="pub-reset-btn is-hidden" id="pub-reset-btn">Reset filter ×</button>
   </div>
@@ -52,3 +46,5 @@ It includes records associated with the team's HAL structures; some work may be 
 <div class="publications">
 {% bibliography %}
 </div>
+
+<p class="pub-note">Topics are assigned automatically from HAL titles, keywords and abstracts. Records whose affiliation is not recorded in HAL may be missing.</p>

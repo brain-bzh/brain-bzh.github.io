@@ -1,0 +1,37 @@
+{
+  "_comment": "Thematic tags for the Publications page. A record gets every tag whose pattern (case-insensitive regex) matches its HAL title or keywords; when none does, its abstract is tried. Edit, then rerun scripts/update_hal.py.",
+  "themes": [
+    {
+      "label": "Few-shot & transfer",
+      "pattern": "few[- ]?shot|zero[- ]?shot|low[- ]data|few[- ]label|transfer learning|transductive|incremental learning|continual|meta[- ]learning|domain adaptation|test[- ]time|vision[- ]language|\\bclip\\b|semi[- ]supervised|self[- ]supervised|foundation model|prompt"
+    },
+    {
+      "label": "Efficient & edge AI",
+      "pattern": "prun|quantiz|binar|compress|hardware|fpga|asic|\\bedge\\b|embedded|low[- ]power|energy|accelerat|low[- ]rank|lora|architecture search|\\bnas\\b|zero[- ]cost|frugal|distillation|efficient (deep|neural|inference|implementation)|microcontroller|tiny"
+    },
+    {
+      "label": "Graphs & geometry",
+      "pattern": "graph|manifold|latent space|geometr|topolog|riemann|hyperbolic"
+    },
+    {
+      "label": "Robustness",
+      "pattern": "robust|adversar|fault[- ]toleran|memory[- ]fault|out[- ]of[- ]distribution"
+    },
+    {
+      "label": "Neuroscience & EEG",
+      "pattern": "\\beeg\\b|fmri|\\bmeg\\b|neuroimaging|neurofeedback|brain[- ]computer|\\bbci\\b|stroke|connectom|cortex|cortical|neuro|brain (activity|signals|networks|age)|cognit"
+    },
+    {
+      "label": "Audio & music",
+      "pattern": "audio|music|\\bsound|speech|acoustic|bird|\\bsongs?\\b|hearing|auditory"
+    },
+    {
+      "label": "Channel coding",
+      "pattern": "polar code|codes polaires|ldpc|channel cod|error[- ]correct|forward error|successive cancellation|dvb-s2|transceiver"
+    },
+    {
+      "label": "Optimization",
+      "pattern": "metaheuristic|genetic algorithm|algorithme génétique|combinatorial|scheduling|simulated annealing|local search|iterated greedy|operator selection"
+    }
+  ]
+}

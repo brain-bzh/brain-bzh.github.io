@@ -21,7 +21,8 @@ API = 'https://api.hal.science/search/'
 PAGE_SIZE = 100
 BIBTEX_BATCH = 50
 FIELDS = ('halId_s,title_s,authFullName_s,producedDateY_i,producedDate_s,publicationDate_s,docType_s,uri_s,'
-          'conferenceTitle_s,journalTitle_s,doiId_s,arxivId_s,structId_i,authIdHasStructure_fs')
+          'conferenceTitle_s,journalTitle_s,doiId_s,arxivId_s,structId_i,authIdHasStructure_fs,'
+          'keyword_s,abstract_s,en_abstract_s')
 MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
 
@@ -141,6 +142,21 @@ def venue_badge(doc, rules):
     return label, color
 
 
+def load_themes():
+    config = json.loads((ROOT / '_data' / 'themes.json').read_text(encoding='utf-8'))
+    return [(item['label'], re.compile(item['pattern'], re.IGNORECASE)) for item in config['themes']]
+
+
+def record_themes(doc, themes):
+    """Tags whose pattern matches the title or keywords, else the abstract."""
+    head = ' '.join(doc.get('title_s', []) + doc.get('keyword_s', []))
+    tags = [label for label, pattern in themes if pattern.search(head)]
+    if not tags:
+        abstract = ' '.join(doc.get('en_abstract_s') or doc.get('abstract_s') or [])
+        tags = [label for label, pattern in themes if pattern.search(abstract)]
+    return tags
+
+
 def arxiv_id(doc, overrides):
     """Prefer HAL's arXiv identifier; allow verified manual additions."""
     value = doc.get('arxivId_s') or overrides.get(doc['halId_s'], '')
@@ -149,7 +165,7 @@ def arxiv_id(doc, overrides):
     return value
 
 
-def annotate_bibtex(bib, docs, rules, overrides=None, redated=None):
+def annotate_bibtex(bib, docs, rules, overrides=None, redated=None, themes=None):
     """Add al-folio fields by HAL ID, not by relying on export ordering."""
     overrides = overrides or {}
     redated = redated or {}
@@ -174,6 +190,9 @@ def annotate_bibtex(bib, docs, rules, overrides=None, redated=None):
         identifier = arxiv_id(by_id[hal_id], overrides)
         if identifier:
             fields += f'\n  ARXIV = {{{identifier}}},'
+        tags = record_themes(by_id[hal_id], themes or [])
+        if tags:
+            fields += '\n  THEMES = {' + '; '.join(tags) + '},'
         if badge:
             label, color = badge
             fields += f'\n  ABBR = {{{label}}},\n  VENUECOLOR = {{{color}}},'
@@ -211,6 +230,7 @@ def main():
     if not docs or None in ids or len(set(ids)) != len(docs):
         raise ValueError('Duplicate or missing HAL IDs; existing output preserved')
     rules = load_venues()
+    themes = load_themes()
     overrides = json.loads((ROOT / 'data' / 'arxiv-overrides.json').read_text(encoding='utf-8'))
     chunks = []
     for start in range(0, len(docs), BIBTEX_BATCH):
@@ -219,13 +239,16 @@ def main():
                       wt='bibtex', rows=len(batch))
         if len(re.findall(r'^@\w+\s*\{', bib, re.M)) != len(batch):
             raise ValueError('HAL BibTeX batch incomplete; existing output preserved')
-        chunks.append(annotate_bibtex(bib, batch, rules, overrides, redated))
+        chunks.append(annotate_bibtex(bib, batch, rules, overrides, redated, themes))
+    untagged = sum(not record_themes(doc, themes) for doc in docs)
     # Keep the JSON export as before: matching logic fields are only needed here.
     for d in docs:
         d.pop('structId_i', None)
         d.pop('authIdHasStructure_fs', None)
         d.pop('producedDate_s', None)
         d.pop('publicationDate_s', None)
+        for field in ('keyword_s', 'abstract_s', 'en_abstract_s'):
+            d.pop(field, None)
     output = ROOT / 'data'
     output.mkdir(exist_ok=True)
     (output / 'hal-publications.json').write_text(json.dumps(docs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -233,7 +256,8 @@ def main():
     (ROOT / '_bibliography' / 'papers.bib').write_text('\n\n'.join(chunks) + '\n', encoding='utf-8')
     print(f'Downloaded {len(docs)} HAL records since {first_year} ({len(candidates) - len(docs)} candidates rejected); '
           f'badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues; '
-          f'{len(redated)} preprints dated by publication instead of HAL deposit.')
+          f'{len(redated)} preprints dated by publication instead of HAL deposit; '
+          f'{untagged} records without a thematic tag.')
 
 
 if __name__ == '__main__':

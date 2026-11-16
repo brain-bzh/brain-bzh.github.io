@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · BRAIN, IMT Atlantique &amp; Lab-STICC</title>
+  {% if page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% include brain-head.liquid %}
+  {% if page.stylesheet %}<link rel="stylesheet" href="{{ page.stylesheet | relative_url }}">{% endif %}
+  {% if page.module %}<script type="module" src="{{ page.module | relative_url }}"></script>{% endif %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include brain-header.liquid %}
+  <main id="main" class="wrap page">
+    <header class="page-head">
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+    </header>
+    {{ content }}
+  </main>
+  {% include brain-footer.liquid %}
+</body>
+</html>

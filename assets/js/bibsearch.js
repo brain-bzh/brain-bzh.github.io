@@ -118,6 +118,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+    // Keep the author menu in step with the search box.
+    const authorSelect = document.getElementById("author-filter");
+    if (authorSelect) {
+      const option = [...authorSelect.options].find((o) => o.value && o.value.toLowerCase() === searchTerm);
+      authorSelect.value = option ? option.value : "";
+    }
+
     // 3. If searchTerm is empty, reset highlights and restore all
     if (!searchTerm) {
       if (CSS.highlights) {
@@ -226,6 +233,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Author menu: filters on the member's full name.
+  const authorSelectEl = document.getElementById("author-filter");
+  if (authorSelectEl) {
+    authorSelectEl.addEventListener("change", function () {
+      const term = this.value;
+      const input = document.getElementById("bibsearch");
+      if (input) input.value = term;
+      if (history.replaceState) {
+        history.replaceState(null, "", term ? "#" + encodeURIComponent(term) : window.location.pathname);
+      }
+      filterItems(term);
+    });
+  }
 
   window.addEventListener("hashchange", updateInputField);
 

@@ -44,10 +44,6 @@
   // ---------------------------------------------------------------------------
   const svg = document.querySelector('.network-art');
   if (svg) {
-    const statusTitle = document.getElementById('network-status-title');
-    const statusPill = document.getElementById('network-status-pill');
-    const footLeft = document.getElementById('network-foot-left');
-    const footRight = document.getElementById('network-foot-right');
     const pulseGroup = svg.querySelector('.network-pulses');
 
     const nodes = [...svg.querySelectorAll('.network-node')].map((element, i) => {
@@ -102,22 +98,6 @@
     let frame = 0;
     let isVisible = true;
 
-    function updateStatusReadout(index) {
-      if (!statusTitle || !statusPill || !footLeft || !footRight) return;
-      if (index >= 0 && nodes[index]) {
-        const n = nodes[index];
-        statusTitle.textContent = n.name.toUpperCase();
-        statusPill.innerHTML = '<span class="live-pulse"></span> CLICK TO EXPLORE ↗';
-        footLeft.textContent = n.role.toUpperCase();
-        footRight.textContent = n.href.startsWith('#') ? 'JUMP TO SECTION ↓' : 'VIEW PUBLICATIONS ↗';
-      } else {
-        statusTitle.textContent = 'REPRESENTATIONS';
-        statusPill.innerHTML = '<span class="live-pulse"></span> INTERACTIVE GRAPH ↗';
-        footLeft.textContent = 'AI × SIGNAL × DATA';
-        footRight.textContent = 'HOVER OR CLICK NODES';
-      }
-    }
-
     function setActive(index) {
       if (active === index) return;
       active = index;
@@ -126,7 +106,6 @@
         edge.element.classList.toggle('is-active', index >= 0 && (edge.from === index || edge.to === index))
       );
       svg.classList.toggle('has-active-node', index >= 0);
-      updateStatusReadout(index);
     }
 
     function draw(now) {
@@ -310,18 +289,12 @@
   }
 
   // ---------------------------------------------------------------------------
-  // 2. Scroll Progress & Sticky Header Polish
+  // 2. Sticky Header Polish
   // ---------------------------------------------------------------------------
-  const progressBar = document.getElementById('scroll-progress');
   const headerShell = document.querySelector('.header-shell');
 
   function onScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if (progressBar && docHeight > 0) {
-      const pct = Math.min(100, Math.max(0, (scrollTop / docHeight) * 100));
-      progressBar.style.transform = `scaleX(${pct / 100})`;
-    }
     if (headerShell) {
       headerShell.classList.toggle('is-scrolled', scrollTop > 18);
     }
@@ -330,7 +303,7 @@
   onScroll();
 
   // ---------------------------------------------------------------------------
-  // 3. Scroll-Triggered Reveal & Animated Stat Counters
+  // 3. Scroll-Triggered Reveal
   // ---------------------------------------------------------------------------
   const revealSections = document.querySelectorAll('.reveal-section');
   if ('IntersectionObserver' in window && !reducedMotion.matches) {
@@ -349,66 +322,4 @@
     revealSections.forEach((sec) => revealObserver.observe(sec));
   }
 
-  // Animated counters in 01 / RESEARCH
-  const statNums = document.querySelectorAll('.stat-num[data-count]');
-  if (statNums.length && 'IntersectionObserver' in window && !reducedMotion.matches) {
-    const countObserver = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const target = Number(el.dataset.count) || 0;
-          const suffix = el.dataset.suffix || '';
-          const duration = 1100;
-          const start = performance.now();
-
-          function tick(now) {
-            const progress = Math.min(1, (now - start) / duration);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            el.textContent = Math.round(target * eased) + suffix;
-            if (progress < 1) requestAnimationFrame(tick);
-          }
-          requestAnimationFrame(tick);
-          obs.unobserve(el);
-        });
-      },
-      { threshold: 0.5 }
-    );
-    statNums.forEach((el) => countObserver.observe(el));
-  }
-
-  // ---------------------------------------------------------------------------
-  // 4. Interactive Tabs: Selected Work & People
-  // ---------------------------------------------------------------------------
-  // Selected Work category filters
-  const workFilterBtns = document.querySelectorAll('.work-filter-btn');
-  const papers = document.querySelectorAll('.papers .paper[data-category]');
-  workFilterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.workFilter;
-      workFilterBtns.forEach((b) => b.classList.toggle('is-active', b === btn));
-      papers.forEach((paper) => {
-        const match = filter === 'all' || paper.dataset.category === filter;
-        paper.classList.toggle('is-filtered-out', !match);
-      });
-    });
-  });
-
-  // Homepage People tabs
-  const peopleTabs = document.querySelectorAll('.people-tab');
-  const personCards = document.querySelectorAll('#home-people-list .person-card');
-  peopleTabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const group = tab.dataset.peopleTab;
-      peopleTabs.forEach((t) => {
-        const active = t === tab;
-        t.classList.toggle('is-active', active);
-        t.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      personCards.forEach((card) => {
-        const show = group === 'all' || card.dataset.memberGroup === group;
-        card.classList.toggle('is-hidden-group', !show);
-      });
-    });
-  });
 })();
