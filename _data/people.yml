@@ -1,10 +1,12 @@
 - group: Permanent researchers
   members:
     - name: Nicolas Farrugia
+      website: https://nicofarr.github.io
       role: Full professor · HDR
       scholar: https://scholar.google.com/citations?user=IO4nLK4AAAAJ
       avatar: /assets/img/people/nicolas-farrugia.jpg
     - name: Vincent Gripon
+      website: https://vincent-gripon.com
       role: Full professor · HDR · Team lead
       scholar: https://scholar.google.com/citations?user=n3IKEqgAAAAJ
       avatar: /assets/img/people/vincent-gripon.jpg
@@ -13,20 +15,24 @@
       scholar: https://scholar.google.com/citations?user=mx2AqLYAAAAJ
       avatar: /assets/img/people/giulia-lioi.jpg
     - name: Mathieu Léonardon
+      website: https://www.mathieuleonardon.com
       role: Associate professor · HDR
       scholar: https://scholar.google.com/citations?user=ZqWCKuwAAAAJ
       avatar: /assets/img/people/mathieu-leonardon.jpg
     - name: Axel Marmoret
+      website: https://ax-le.github.io
       role: Associate professor
       scholar: https://scholar.google.com/citations?user=2PRDe3oAAAAJ
       avatar: /assets/img/people/axel-marmoret.jpg
     - name: Bastien Pasdeloup
+      website: https://bastienpasdeloup.github.io
       role: Associate professor · HDR
       scholar: https://scholar.google.com/citations?user=dKOgoG4AAAAJ
       avatar: /assets/img/people/bastien-pasdeloup.jpg
 - group: Postdoctoral researchers
   members:
     - name: Venkatesh Subramani
+      website: https://venkateshness.github.io
       scholar: https://scholar.google.com/citations?user=4aZ_rOIAAAAJ
       avatar: /assets/img/people/venkatesh-subramani.svg
 - group: PhD students

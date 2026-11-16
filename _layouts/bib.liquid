@@ -60,6 +60,10 @@
         {% else %}{% assign publication_type = 'Other' %}
       {% endcase %}
       <span class="publication-type">{{ publication_type }}</span>
+      {% if entry.themes %}
+        {% assign entry_themes = entry.themes | split: ';' %}
+        {% for theme in entry_themes %}<span class="publication-theme">{{ theme | strip }}</span>{% endfor %}
+      {% endif %}
     </div>
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
