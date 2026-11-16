@@ -8,6 +8,7 @@
 - name: Ala Aboudib
   scholar: https://scholar.google.fr/citations?user=bUzrnk4AAAAJ
   hal: false
+- name: Ismail Amessegher
 - name: Raphael Baena
   phd: 2023
 - name: Yassir Bendou
@@ -28,6 +29,7 @@
 - name: Maëlle Freteault
   phd: 2025
   hal: false
+- name: Lucas Grativol
 - name: Yuqing Hu
   phd: 2022
 - name: Karl La Grassa
@@ -41,6 +43,8 @@
   hal: false
 - name: Carlos Lassance
   scholar: https://scholar.google.fr/citations?user=UnUYWp0AAAAJ
+- name: Hugo Le Blevec
+- name: Timotée Ly-Manson
 - name: Ilyass Moummad
   phd: 2024
 - name: Hugo Tessier
