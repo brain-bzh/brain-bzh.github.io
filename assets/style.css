@@ -1611,6 +1611,10 @@ html[data-theme="dark"] .brain-logo {
   filter: brightness(1.14) saturate(1.08);
 }
 
+html[data-theme="dark"] .institution-logo img {
+  filter: invert(1) hue-rotate(180deg) brightness(1.15);
+}
+
 html[data-theme="dark"] .theme-toggle {
   background: rgba(19, 42, 56, 0.72);
   border-color: #254558;
@@ -1919,15 +1923,14 @@ html[data-theme="dark"] .node-ring {
   height: 42px;
 }
 
-/* Both institution logos in monochrome: black on light, white on dark */
-.institution-logo img {
-  filter: brightness(0);
-  opacity: .82;
+.lab-logo .logo-on-dark,
+html[data-theme="dark"] .lab-logo .logo-on-light {
+  display: none;
 }
 
-html[data-theme="dark"] .institution-logo img {
-  filter: brightness(0) invert(1);
-  opacity: .88;
+html[data-theme="dark"] .lab-logo .logo-on-dark {
+  display: block;
+  filter: none;
 }
 
 @media (max-width: 700px) {
