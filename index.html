@@ -509,7 +509,7 @@ permalink: /
           <ul class="alumni-list">
             {% for member in site.data.alumni %}
             <li class="alumni-item">
-              <span class="alumni-name">{{ member.name | escape }}</span>
+              <span class="alumni-name">{{ member.name | escape }}{% if member.phd %} <small>PhD {{ member.phd }}</small>{% endif %}</span>
               <span class="person-actions">
                 {% if member.website %}<a class="person-icon-link" href="{{ member.website }}" target="_blank" rel="noopener noreferrer" title="Website of {{ member.name | escape }}" aria-label="Personal website of {{ member.name | escape }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg></a>{% endif %}
                 {% if member.linkedin %}<a class="person-icon-link" href="{{ member.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn of {{ member.name | escape }}" aria-label="LinkedIn profile of {{ member.name | escape }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg></a>{% endif %}
