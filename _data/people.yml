@@ -37,6 +37,8 @@
       avatar: /assets/img/people/venkatesh-subramani.svg
 - group: PhD students
   members:
+    - name: Ismail Amessegher
+      avatar: /assets/img/people/ismail-amessegher.jpg
     - name: Réda Bensaid
       scholar: https://scholar.google.com/citations?user=InQw64sAAAAJ
       avatar: /assets/img/people/reda-bensaid.png
