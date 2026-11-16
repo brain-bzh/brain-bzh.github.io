@@ -1,20 +1,67 @@
 #!/usr/bin/env python3
-"""Download BRAIN-affiliated HAL records and HAL's BibTeX export."""
+"""Download BRAIN HAL records and HAL's BibTeX export.
+
+A record is kept when it is attached to the BRAIn HAL structure, or when a
+permanent member (data/hal-members.json) is an author and is personally
+affiliated with Lab-STICC or IMT Atlantique on it. This recovers work from
+before the BRAIn structure existed (2023) or published elsewhere in the lab.
+Only the last `years_back` years are kept.
+"""
 import hashlib
 import json
 import re
 import sys
+import datetime
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QUERY = 'structId_i:(1149551 OR 1251172)'
+BRAIN_STRUCTURES = {1149551, 1251172}
 API = 'https://api.hal.science/search/'
 PAGE_SIZE = 100
+BIBTEX_BATCH = 50
+FIELDS = ('halId_s,title_s,authFullName_s,producedDateY_i,docType_s,uri_s,conferenceTitle_s,'
+          'journalTitle_s,doiId_s,arxivId_s,structId_i,authIdHasStructure_fs')
 
-def request(**params):
-    query = {'q': QUERY, 'sort': 'halId_s asc', **params}
+
+def load_members():
+    config = json.loads((ROOT / 'data' / 'hal-members.json').read_text(encoding='utf-8'))
+    members = {int(v) for v in config['members'].values()}
+    structures = {int(k) for k in config['affiliation_structures']}
+    first_year = datetime.date.today().year - int(config['years_back'])
+    return members, structures, first_year
+
+
+def build_query(members, structures):
+    def ors(values):
+        return ' OR '.join(str(v) for v in sorted(values))
+    return (f'structId_i:({ors(BRAIN_STRUCTURES)}) OR '
+            f'(authIdHal_i:({ors(members)}) AND structId_i:({ors(structures)}))')
+
+
+def member_affiliated(doc, members, structures):
+    """True if a member is personally affiliated with one of `structures`.
+
+    authIdHasStructure_fs entries look like
+    '<authorform>-<idHal_i>_FacetSep_<name>_JoinSep_<structId>_FacetSep_<structure name>'
+    and already list parent structures (team, laboratory, institution).
+    """
+    for entry in doc.get('authIdHasStructure_fs', []):
+        author, _, structure = entry.partition('_JoinSep_')
+        person = author.split('_FacetSep_', 1)[0].rsplit('-', 1)[-1]
+        struct_id = structure.split('_FacetSep_', 1)[0]
+        if person.isdigit() and struct_id.isdigit() and int(person) in members and int(struct_id) in structures:
+            return True
+    return False
+
+
+def is_team_record(doc, members, structures):
+    return bool(BRAIN_STRUCTURES & set(doc.get('structId_i', []))) or member_affiliated(doc, members, structures)
+
+
+def request(query, **params):
+    query = {'q': query, 'sort': 'halId_s asc', **params}
     req = urllib.request.Request(API + '?' + urllib.parse.urlencode(query), headers={'User-Agent': 'brain-bzh-site/1.0 (HAL bibliography)'})
     with urllib.request.urlopen(req, timeout=60) as response:
         return response.read().decode('utf-8')
@@ -107,32 +154,46 @@ def annotate_bibtex(bib, docs, rules, overrides=None):
 
 
 def main():
-    first = json.loads(request(wt='json', rows=0))['response']
+    members, structures, first_year = load_members()
+    query = build_query(members, structures)
+    years = f'producedDateY_i:[{first_year} TO *]'
+    first = json.loads(request(query, fq=years, wt='json', rows=0))['response']
     total = first['numFound']
     if not total or total > 10000:
         raise ValueError(f'Unexpected HAL result count: {total}; existing output preserved')
-    docs, chunks = [], []
-    rules = load_venues()
-    overrides = json.loads((ROOT / 'data' / 'arxiv-overrides.json').read_text(encoding='utf-8'))
+    candidates = []
     for start in range(0, total, PAGE_SIZE):
         count = min(PAGE_SIZE, total - start)
-        result = json.loads(request(wt='json', rows=count, start=start, fl='halId_s,title_s,authFullName_s,producedDateY_i,docType_s,uri_s,conferenceTitle_s,journalTitle_s,doiId_s,arxivId_s'))['response']
+        result = json.loads(request(query, fq=years, wt='json', rows=count, start=start, fl=FIELDS))['response']
         if result['numFound'] != total or len(result['docs']) != count:
             raise ValueError('HAL result count changed or page incomplete; existing output preserved')
-        bib = request(wt='bibtex', rows=count, start=start)
-        if len(re.findall(r'^@\w+\s*\{', bib, re.M)) != count:
-            raise ValueError('HAL BibTeX page incomplete; existing output preserved')
-        docs.extend(result['docs'])
-        chunks.append(annotate_bibtex(bib, result['docs'], rules, overrides))
+        candidates.extend(result['docs'])
+    docs = [d for d in candidates if is_team_record(d, members, structures)]
     ids = [d.get('halId_s') for d in docs]
-    if None in ids or len(set(ids)) != total:
+    if not docs or None in ids or len(set(ids)) != len(docs):
         raise ValueError('Duplicate or missing HAL IDs; existing output preserved')
+    rules = load_venues()
+    overrides = json.loads((ROOT / 'data' / 'arxiv-overrides.json').read_text(encoding='utf-8'))
+    chunks = []
+    for start in range(0, len(docs), BIBTEX_BATCH):
+        batch = docs[start:start + BIBTEX_BATCH]
+        bib = request('halId_s:(' + ' OR '.join(f'"{d["halId_s"]}"' for d in batch) + ')',
+                      wt='bibtex', rows=len(batch))
+        if len(re.findall(r'^@\w+\s*\{', bib, re.M)) != len(batch):
+            raise ValueError('HAL BibTeX batch incomplete; existing output preserved')
+        chunks.append(annotate_bibtex(bib, batch, rules, overrides))
+    # Keep the JSON export as before: matching logic fields are only needed here.
+    for d in docs:
+        d.pop('structId_i', None)
+        d.pop('authIdHasStructure_fs', None)
     output = ROOT / 'data'
     output.mkdir(exist_ok=True)
     (output / 'hal-publications.json').write_text(json.dumps(docs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     (ROOT / '_bibliography').mkdir(exist_ok=True)
     (ROOT / '_bibliography' / 'papers.bib').write_text('\n\n'.join(chunks) + '\n', encoding='utf-8')
-    print(f'Downloaded {total} BRAIN-affiliated HAL records; badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues.')
+    print(f'Downloaded {len(docs)} HAL records since {first_year} ({len(candidates) - len(docs)} candidates rejected); '
+          f'badged {sum(bool(venue_badge(doc, rules)) for doc in docs)} matching venues.')
+
 
 if __name__ == '__main__':
     try:

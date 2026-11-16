@@ -18,6 +18,1037 @@
   },
   {
     "title_s": [
+      "SimiNet: a Novel Method for Quantifying Brain Network Similarity"
+    ],
+    "journalTitle_s": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authFullName_s": [
+      "Ahmad Mheich",
+      "Mahmoud Hassan",
+      "Mohamad Khalil",
+      "Vincent Gripon",
+      "Olivier Dufor",
+      "Fabrice Wendling"
+    ],
+    "halId_s": "hal-01591250",
+    "uri_s": "https://hal.science/hal-01591250v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1109/TPAMI.2017.2750160",
+    "arxivId_s": "1709.07211",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Associative Memories to Accelerate Approximate Nearest Neighbor Search"
+    ],
+    "journalTitle_s": "Applied Sciences",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Matthias Löwe",
+      "Franck Vermet"
+    ],
+    "halId_s": "hal-01875907",
+    "uri_s": "https://hal.science/hal-01875907v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/app8091676",
+    "arxivId_s": "1611.05898",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Involuntary and voluntary recall of musical memories: A comparison of temporal accuracy and emotional responses"
+    ],
+    "journalTitle_s": "Memory and Cognition",
+    "authFullName_s": [
+      "Kelly Jakubowski",
+      "Zaariyah Bashir",
+      "Nicolas Farrugia",
+      "Lauren Stewart"
+    ],
+    "halId_s": "hal-01875908",
+    "uri_s": "https://imt-atlantique.hal.science/hal-01875908v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3758/s13421-018-0792-x",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Matching Convolutional Neural Networks without Priors about Data"
+    ],
+    "conferenceTitle_s": "DSW 2018 : IEEE Data Science Workshop",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Carlos Eduardo Rosar Kos Lassance",
+      "Jean-Charles Vialatte"
+    ],
+    "halId_s": "hal-01875919",
+    "uri_s": "https://hal.science/hal-01875919v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/DSW.2018.8439900",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Sons et lumières du Haut Vicdessos. La nuit au prisme d'une écologie du son et de la lumière artificielle"
+    ],
+    "conferenceTitle_s": "Séminaire annuel du LabEx DRIIHM (Dispositif de Recherche Interdisciplinaire sur les Interactions Hommes-Milieux)",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Alexis Laforge",
+      "Rémi Bénos",
+      "Nicolas Farrugia",
+      "Clélia Sirami",
+      "Georges Zissis",
+      "Laurent Canale",
+      "Sebastien C. Vauclair"
+    ],
+    "halId_s": "hal-01893285",
+    "uri_s": "https://univ-tlse2.hal.science/hal-01893285v1",
+    "docType_s": "POSTER",
+    "doiId_s": "10.13140/RG.2.2.18803.58409",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Improving Accuracy of Nonparametric Transfer Learning Via Vector Segmentation"
+    ],
+    "conferenceTitle_s": "ICASSP 2018 : IEEE International Conference on Acoustics, Speech and Signal Processing",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Ghouthi Hacene",
+      "Matthias Lowe",
+      "Franck Vermet"
+    ],
+    "halId_s": "hal-01919815",
+    "uri_s": "https://hal.science/hal-01919815v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICASSP.2018.8462273",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Uncertainty principle on graphs"
+    ],
+    "authFullName_s": [
+      "Bastien Pasdeloup",
+      "Vincent Gripon",
+      "Réda Alami",
+      "Michael Rabbat"
+    ],
+    "halId_s": "hal-01944835",
+    "uri_s": "https://hal.science/hal-01944835v1",
+    "docType_s": "COUV",
+    "doiId_s": "10.1007/978-3-030-03574-7_9",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Transfer Incremental Learning Using Data Augmentation"
+    ],
+    "journalTitle_s": "Applied Sciences",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-01950211",
+    "uri_s": "https://hal.science/hal-01950211v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/app8122512",
+    "arxivId_s": "1810.02020",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "An Inside Look at Deep Neural Networks using Graph Signal Processing"
+    ],
+    "conferenceTitle_s": "2018 Information Theory and Applications Workshop (ITA)",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Antonio Ortega",
+      "Benjamin Girault"
+    ],
+    "halId_s": "hal-01959770",
+    "uri_s": "https://inria.hal.science/hal-01959770v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ITA.2018.8503214",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Quantized Guided Pruning for Efficient Hardware Implementations of Convolutional Neural Networks"
+    ],
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Matthieu Arzel",
+      "Nicolas Farrugia",
+      "Yoshua Bengio"
+    ],
+    "halId_s": "hal-01965304",
+    "uri_s": "https://hal.science/hal-01965304v1",
+    "docType_s": "UNDEFINED",
+    "arxivId_s": "1812.11337",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Attention Based Pruning for Shift Networks"
+    ],
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Matthieu Courbariaux",
+      "Yoshua Bengio"
+    ],
+    "halId_s": "hal-02051580",
+    "uri_s": "https://hal.science/hal-02051580v2",
+    "docType_s": "UNDEFINED",
+    "arxivId_s": "1905.12300",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "A functional connectome phenotyping dataset including cognitive state and personality measures"
+    ],
+    "journalTitle_s": "Scientific Data",
+    "authFullName_s": [
+      "Natacha Mendes",
+      "Sabine Oligschläger",
+      "Mark Lauckner",
+      "Johannes Golchert",
+      "Julia Huntenburg",
+      "Marcel Falkiewicz",
+      "Melissa Ellamil",
+      "Sarah Krause",
+      "Blazej Baczkowski",
+      "Roberto Cozatl",
+      "Anastasia Osoianu",
+      "Deniz Kumral",
+      "Jared Pool",
+      "Laura Golz",
+      "Maria Dreyer",
+      "Philipp Haueis",
+      "Rebecca Jost",
+      "Yelyzaveta Kramarenko",
+      "Haakon Engen",
+      "Katharina Ohrnberger",
+      "Krzysztof J Gorgolewski",
+      "Nicolas Farrugia",
+      "Anahit Babayan",
+      "Andrea Reiter",
+      "H. Lina Schaare",
+      "Janis Reinelt",
+      "Josefin Röbbig",
+      "Marie Uhlig",
+      "Miray Erbey",
+      "Michael Gaebler",
+      "Jonathan Smallwood",
+      "Arno Villringer",
+      "Daniel Margulies"
+    ],
+    "halId_s": "hal-02052230",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02052230v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1038/sdata.2018.307",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Spectral Graph Wavelet Transform as Feature Extractor for Machine Learning in Neuroimaging"
+    ],
+    "conferenceTitle_s": "ICASSP 2019 : International Conference on Acoustics, Speech, and Signal Processing",
+    "authFullName_s": [
+      "Yusuf Yigit Pilavci",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-02052244",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02052244v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICASSP.2019.8683901",
+    "arxivId_s": "1910.05149",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Comparing linear structure-based and data-driven latent spatial representations for sequence prediction"
+    ],
+    "conferenceTitle_s": "SPIE Optical Engineering + Applications",
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-02189734",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02189734v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1117/12.2528450",
+    "arxivId_s": "1908.06868",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Efficacy of EEG-fMRI Neurofeedback in stroke in relation to the DTI structural damage: a pilot study"
+    ],
+    "conferenceTitle_s": "OHBM 2019 - 25th Annual Meeting of the Organization for Human Brain Mapping",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Simon Butet",
+      "Mathis Fleury",
+      "Anatole Lécuyer",
+      "Isabelle Bonan",
+      "Christian Barillot"
+    ],
+    "halId_s": "hal-02265495",
+    "uri_s": "https://inria.hal.science/hal-02265495v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "A multi-target motor imagery training using EEG-fMRI Neurofeedback: an exploratory study on stroke"
+    ],
+    "conferenceTitle_s": "OHBM 2019- Orgaization for Human Brain Mapping",
+    "authFullName_s": [
+      "Simon Butet",
+      "Giulia Lioi",
+      "Mathis Fleury",
+      "Anatole Lécuyer",
+      "Christian Barillot",
+      "Isabelle Bonan"
+    ],
+    "halId_s": "hal-02265496",
+    "uri_s": "https://inria.hal.science/hal-02265496v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Budget Restricted Incremental Learning with Pre-Trained Convolutional Neural Networks and Binary Associative Memories"
+    ],
+    "journalTitle_s": "Journal of Signal Processing Systems",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-02273161",
+    "uri_s": "https://hal.science/hal-02273161v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1007/s11265-019-01450-z",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "EEG measurement of binaural sound immersion"
+    ],
+    "conferenceTitle_s": "EAA Spatial Audio Signal Processing Symposium",
+    "authFullName_s": [
+      "Rozenn Nicol",
+      "Olivier Dufor",
+      "Laetitia Gros",
+      "Pascal Rueff",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-02275183",
+    "uri_s": "https://hal.science/hal-02275183v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.25836/sasp.2019.21",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Graph-Projected Signal Processing"
+    ],
+    "conferenceTitle_s": "GlobalSIP 2018 : IEEE International Conference on Signal and Information Processing",
+    "authFullName_s": [
+      "Nicolas Grelier",
+      "Carlos Eduardo Rosar Kós Lassance",
+      "Elsa Dupraz",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-02280720",
+    "uri_s": "https://hal.science/hal-02280720v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/GlobalSIP.2018.8646674",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Graph Fourier Transform of fMRI temporal signals based on an averaged structural connectome for the classification of neuroimaging"
+    ],
+    "journalTitle_s": "Artificial Intelligence in Medicine",
+    "authFullName_s": [
+      "Abdelbasset Brahim",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-02302538",
+    "uri_s": "https://imt.hal.science/hal-02302538v2",
+    "docType_s": "ART",
+    "doiId_s": "10.1016/j.artmed.2020.101870",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Bimodal EEG-fMRI Neurofeedback for upper motor limb rehabilitation: a pilot study on chronic patients"
+    ],
+    "conferenceTitle_s": "rtFIN 2019 - Real Time Functional Imaging and Neurofeedback",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Simon Butet",
+      "Mathis Fleury",
+      "Claire Cury",
+      "Elise Bannier",
+      "Anatole Lécuyer",
+      "Isabelle Bonan",
+      "Christian Barillot"
+    ],
+    "halId_s": "hal-02383532",
+    "uri_s": "https://inria.hal.science/hal-02383532v3",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "The use of haptic feedback in Brain-Computer Interfaces and Neurofeedback"
+    ],
+    "conferenceTitle_s": "rtFIN 2019 - Real Time Functional Imaging and Neurofeedback",
+    "authFullName_s": [
+      "Mathis Fleury",
+      "Giulia Lioi",
+      "Christian Barillot",
+      "Anatole Lécuyer"
+    ],
+    "halId_s": "hal-02387400",
+    "uri_s": "https://hal.science/hal-02387400v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "The use of haptic feedback in Brain-Computer Interfaces and Neurofeedback"
+    ],
+    "conferenceTitle_s": "CORTICO 2019 - Journée Jeunes Chercheurs en Interfaces Cerveau-Ordinateur et Neurofeedback",
+    "authFullName_s": [
+      "Mathis Fleury",
+      "Giulia Lioi",
+      "Christian Barillot",
+      "Anatole Lécuyer"
+    ],
+    "halId_s": "hal-02387408",
+    "uri_s": "https://hal.science/hal-02387408v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "A Survey on the Use of Haptic Feedback for Brain-Computer Interfaces and Neurofeedback"
+    ],
+    "journalTitle_s": "Frontiers in Neuroscience",
+    "authFullName_s": [
+      "Mathis Fleury",
+      "Giulia Lioi",
+      "Christian Barillot",
+      "Anatole Lécuyer"
+    ],
+    "halId_s": "hal-02459828",
+    "uri_s": "https://hal.science/hal-02459828v2",
+    "docType_s": "ART",
+    "doiId_s": "10.3389/fnins.2020.00528",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "A Unified Deep Learning Formalism For Processing Graph Signals"
+    ],
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Carlos Lassance",
+      "Jean-Charles Vialatte",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-02487422",
+    "uri_s": "https://hal.science/hal-02487422v1",
+    "docType_s": "UNDEFINED",
+    "arxivId_s": "1905.00496",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Introducing Graph Smoothness Loss for Training Deep Learning Architectures"
+    ],
+    "conferenceTitle_s": "2019 IEEE Data Science Workshop (DSW)",
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Carlos Lassance",
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Jian Tang",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-02487427",
+    "uri_s": "https://hal.science/hal-02487427v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/DSW.2019.8755559",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Training Modern Deep Neural Networks for Memory-Fault Robustness"
+    ],
+    "conferenceTitle_s": "2019 IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "François Leduc-Primeau",
+      "Amal Ben Soussia",
+      "Vincent Gripon",
+      "François Gagnon"
+    ],
+    "halId_s": "hal-02487434",
+    "uri_s": "https://hal.science/hal-02487434v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ISCAS.2019.8702382",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Structural Robustness for Deep Learning Architectures"
+    ],
+    "conferenceTitle_s": "2019 IEEE Data Science Workshop (DSW)",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Jian Tang",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-02487448",
+    "uri_s": "https://hal.science/hal-02487448v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/DSW.2019.8755564",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Transfer Learning with Sparse Associative Memories"
+    ],
+    "authFullName_s": [
+      "Quentin Jodelet",
+      "Vincent Gripon",
+      "Masafumi Hagiwara"
+    ],
+    "halId_s": "hal-02487451",
+    "uri_s": "https://hal.science/hal-02487451v1",
+    "docType_s": "COUV",
+    "doiId_s": "10.1007/978-3-030-30487-4_39",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Efficient Hardware Implementation of Incremental Learning and Inference on Chip"
+    ],
+    "conferenceTitle_s": "NEWCAS 2019 : 17th IEEE International New Circuits and Systems Conference",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Nicolas Farrugia",
+      "Matthieu Arzel",
+      "Michel Jezequel"
+    ],
+    "halId_s": "hal-02487476",
+    "uri_s": "https://hal.science/hal-02487476v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/NEWCAS44328.2019.8961310",
+    "arxivId_s": "1911.07847",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Improved Visual Localization via Graph Smoothing"
+    ],
+    "journalTitle_s": "Journal of Imaging",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Yasir Latif",
+      "Ravi Garg",
+      "Vincent Gripon",
+      "Ian Reid"
+    ],
+    "halId_s": "hal-02487479",
+    "uri_s": "https://hal.science/hal-02487479v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/jimaging7020020",
+    "arxivId_s": "1911.02961",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "BitPruning: Learning Bitlengths for Aggressive and Accurate Quantization"
+    ],
+    "authFullName_s": [
+      "Miloš Nikolić",
+      "Ghouthi Boukli Hacene",
+      "Ciaran Bannon",
+      "Alberto Delmas Lascorz",
+      "Matthieu Courbariaux",
+      "Yoshua Bengio",
+      "Vincent Gripon",
+      "Andreas Moshovos"
+    ],
+    "halId_s": "hal-02487489",
+    "uri_s": "https://hal.science/hal-02487489v1",
+    "docType_s": "UNDEFINED",
+    "arxivId_s": "2002.03090",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "A Multi-Target Motor Imagery Training Using Bimodal EEG-fMRI Neurofeedback: A Pilot Study in Chronic Stroke Patients"
+    ],
+    "journalTitle_s": "Frontiers in Human Neuroscience",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Simon Butet",
+      "Mathis Fleury",
+      "Elise Bannier",
+      "Anatole Lécuyer",
+      "Isabelle Bonan",
+      "Christian Barillot"
+    ],
+    "halId_s": "hal-02491848",
+    "uri_s": "https://inria.hal.science/hal-02491848v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3389/fnhum.2020.00037",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "An Online Learning-based Metaheuristic for Solving Combinatorial Optimization Problems"
+    ],
+    "conferenceTitle_s": "ROADEF 2020 : 21ème Congrès Annuel de la Société Française de Recherche Opérationnelle et d’Aide à la Décision",
+    "authFullName_s": [
+      "Maryam Karimi-Mamaghan",
+      "Mehrdad Mohammadi",
+      "Bastien Pasdeloup",
+      "Romain Billot",
+      "Patrick Meyer"
+    ],
+    "halId_s": "hal-02506178",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02506178v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Autoencoder-based generation of individuals in population-based metaheuristics"
+    ],
+    "conferenceTitle_s": "ROADEF 2020 : 21ème Congrès Annuel de la Société Française de Recherche Opérationnelle et d’Aide à la Décision",
+    "authFullName_s": [
+      "Bastien Pasdeloup",
+      "Maryam Karimi-Mamaghan",
+      "Mehrdad Mohammadi",
+      "Patrick Meyer"
+    ],
+    "halId_s": "hal-02506195",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02506195v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Learning 2-in-1: Towards Integrated EEG-fMRI-Neurofeedback"
+    ],
+    "authFullName_s": [
+      "Lorraine Perronnet",
+      "Anatole Lécuyer",
+      "Marsel Mano",
+      "Mathis Fleury",
+      "Giulia Lioi",
+      "Claire Cury",
+      "Maureen Clerc",
+      "Fabien Lotte",
+      "Christian Barillot"
+    ],
+    "halId_s": "hal-02522245",
+    "uri_s": "https://inria.hal.science/hal-02522245v1",
+    "docType_s": "UNDEFINED",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Simultaneous EEG-fMRI during a neurofeedback task, a brain imaging dataset for multimodal data integration"
+    ],
+    "journalTitle_s": "Scientific Data",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Claire Cury",
+      "Lorraine Perronnet",
+      "Marsel Mano",
+      "Elise Bannier",
+      "Anatole Lécuyer",
+      "Christian Barillot"
+    ],
+    "halId_s": "hal-02865965",
+    "uri_s": "https://inria.hal.science/hal-02865965v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1038/s41597-020-0498-3",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Robustesse structurelle des architectures d'apprentissage profond"
+    ],
+    "conferenceTitle_s": "GRETSI",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Jian Tang",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-02871252",
+    "uri_s": "https://hal.science/hal-02871252v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Un modèle unifié pour la classification de signaux sur graphe avec de l'apprentissage profond"
+    ],
+    "conferenceTitle_s": "GRETSI",
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Carlos Lassance",
+      "Jean-Charles Vialatte",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-02871259",
+    "uri_s": "https://hal.science/hal-02871259v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Robustesse des réseaux de neurones profonds aux défaillances mémoire"
+    ],
+    "conferenceTitle_s": "GRETSI",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "François Leduc-Primeau",
+      "Amal Ben Soussia",
+      "Vincent Gripon",
+      "François Gagnon"
+    ],
+    "halId_s": "hal-02871265",
+    "uri_s": "https://hal.science/hal-02871265v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Deep Geometric Knowledge Distillation with Graphs"
+    ],
+    "conferenceTitle_s": "ICASSP 2020: IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Myriam Bontonou",
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Jian Tang",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-02871309",
+    "uri_s": "https://hal.science/hal-02871309v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICASSP40776.2020.9053986",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "MusicNTD"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E Cohen",
+      "Nancy Bertin",
+      "Frédéric Bimbot"
+    ],
+    "halId_s": "hal-02915453",
+    "uri_s": "https://hal.science/hal-02915453v1",
+    "docType_s": "SOFTWARE",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "nn_fac: Nonnegative Factorization techniques toolbox"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E Cohen"
+    ],
+    "halId_s": "hal-02915456",
+    "uri_s": "https://hal.science/hal-02915456v1",
+    "docType_s": "SOFTWARE",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation"
+    ],
+    "conferenceTitle_s": "ISMIR 2020 - 21st International Society for Music Information Retrieval",
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E Cohen",
+      "Nancy Bertin",
+      "Frédéric Bimbot"
+    ],
+    "halId_s": "hal-02928733",
+    "uri_s": "https://hal.science/hal-02928733v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "GPU-based Self-Organizing-Maps for Post-Labeled Few-Shot Unsupervised Learning"
+    ],
+    "conferenceTitle_s": "International Conference on Neural Information Processing (ICONIP) 2020",
+    "authFullName_s": [
+      "Lyes Khacef",
+      "Vincent Gripon",
+      "Benoit Miramond"
+    ],
+    "halId_s": "hal-02934233",
+    "uri_s": "https://hal.science/hal-02934233v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1007/978-3-030-63833-7_34",
+    "arxivId_s": "2009.03665",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Quantized Guided Pruning for Efficient Hardware Implementations of Deep Neural Networks"
+    ],
+    "conferenceTitle_s": "NEWCAS 2020 : 18th IEEE International New Circuits and Systems Conference",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon",
+      "Matthieu Arzel",
+      "Nicolas Farrugia",
+      "Yoshua Bengio"
+    ],
+    "halId_s": "hal-02934543",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02934543v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/NEWCAS49341.2020.9159769",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Static and dynamic aspects of cerebro-cerebellar functional connectivity are associated with self-reported measures of impulsivity: A resting-state fMRI study"
+    ],
+    "journalTitle_s": "Network Neuroscience",
+    "authFullName_s": [
+      "Majd Abdallah",
+      "Nicolas Farrugia",
+      "Valentine Chirokoff",
+      "Sandra Chanraud"
+    ],
+    "halId_s": "hal-02945181",
+    "uri_s": "https://imt-atlantique.hal.science/hal-02945181v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1162/netn_a_00149",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Sons et lumières du Vicdessos. Explorations méthodologiques pour l’étude d’un socio-écosystème nocturne"
+    ],
+    "conferenceTitle_s": "ohmpyr2020 : Séminaire de restitution des projets 2018-2019 de l'OHM Pyrénées Haut Vicdessos 2020",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Nicolas Farrugia",
+      "Johan Milian",
+      "Alexis Laforge",
+      "Rémi Bénos",
+      "Georges Zissis",
+      "Laurent Canale",
+      "Clélia Sirami"
+    ],
+    "halId_s": "hal-03012765",
+    "uri_s": "https://hal.science/hal-03012765v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Une approche pour regrouper des sujets atteints de cancers, sur la base des similarités des répartitions cellulaires au sein de leurs biopsies"
+    ],
+    "conferenceTitle_s": "EGC 2021 : 21ème conférence Extraction et Gestion des Connaissances",
+    "authFullName_s": [
+      "Yassine El Ouahidi",
+      "Matis Feller",
+      "Matthieu Talagas",
+      "Bastien Pasdeloup"
+    ],
+    "halId_s": "hal-03131445",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03131445v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Laplacian networks: bounding indicator function smoothness for neural networks robustness"
+    ],
+    "journalTitle_s": "APSIPA Transactions on Signal and Information Processing",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-03134179",
+    "uri_s": "https://hal.science/hal-03134179v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1017/ATSIP.2021.2",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "MusicOnPolytopes"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E Cohen",
+      "Frédéric Bimbot"
+    ],
+    "halId_s": "hal-03151484",
+    "uri_s": "https://hal.science/hal-03151484v1",
+    "docType_s": "SOFTWARE",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Quantization and Deployment of Deep Neural Networks on Microcontrollers"
+    ],
+    "journalTitle_s": "Sensors",
+    "authFullName_s": [
+      "Pierre-Emmanuel Novac",
+      "Ghouthi Boukli Hacene",
+      "Alain Pegatoquet",
+      "Benoit Miramond",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03208457",
+    "uri_s": "https://hal.science/hal-03208457v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/s21092984",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Inferring Graph Signal Translations as Invariant Transformations for Classification Tasks"
+    ],
+    "conferenceTitle_s": "EUSIPCO 2021: 29th European Signal Processing Conference",
+    "authFullName_s": [
+      "Raphael Baena",
+      "Lucas Drumetz",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03235669",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03235669v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.23919/EUSIPCO54536.2021.9616010",
+    "arxivId_s": "2102.09493",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Graph Topology Inference Benchmarks for Machine Learning"
+    ],
+    "conferenceTitle_s": "MLSP 2020 : IEEE 30th International Workshop on Machine Learning for Signal Processing",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Gonzalo Mateos"
+    ],
+    "halId_s": "hal-03238747",
+    "uri_s": "https://hal.science/hal-03238747v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/MLSP49062.2020.9231794",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Attention Based Pruning for Shift Networks"
+    ],
+    "conferenceTitle_s": "ICPR 2020: 25th International Conference on Pattern Recognition",
+    "authFullName_s": [
+      "Ghouthi Boukli Hacene",
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Matthieu Courbariaux",
+      "Yoshua Bengio"
+    ],
+    "halId_s": "hal-03238771",
+    "uri_s": "https://hal.science/hal-03238771v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICPR48806.2021.9412859",
+    "arxivId_s": "1905.12300",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Graph-based Interpolation of Feature Vectors for Accurate Few-Shot Classification"
+    ],
+    "conferenceTitle_s": "ICPR 2020: 25th International Conference on Pattern Recognition",
+    "authFullName_s": [
+      "Yuqing Hu",
+      "Vincent Gripon",
+      "Stephane Pateux"
+    ],
+    "halId_s": "hal-03238774",
+    "uri_s": "https://hal.science/hal-03238774v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICPR48806.2021.9412076",
+    "arxivId_s": "2001.09849",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Representing Deep Neural Networks Latent Space Geometries with Graphs"
+    ],
+    "journalTitle_s": "Algorithms",
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Vincent Gripon",
+      "Antonio Ortega"
+    ],
+    "halId_s": "hal-03238776",
+    "uri_s": "https://hal.science/hal-03238776v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/a14020039",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Some Remarks on Replicated Simulated Annealing"
+    ],
+    "journalTitle_s": "Journal of Statistical Physics",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Matthias Löwe",
+      "Franck Vermet"
+    ],
+    "halId_s": "hal-03238781",
+    "uri_s": "https://hal.science/hal-03238781v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1007/s10955-021-02727-z",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
       "Gradients of connectivity as graph Fourier bases of brain activity"
     ],
     "journalTitle_s": "Network Neuroscience",
@@ -33,6 +1064,519 @@
     "docType_s": "ART",
     "doiId_s": "10.1162/netn_a_00183",
     "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "ThriftyNets: Convolutional Neural Networks with Tiny Parameter Budget"
+    ],
+    "journalTitle_s": "IoT",
+    "authFullName_s": [
+      "Guillaume Coiffier",
+      "Ghouthi Boukli Hacene",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03238788",
+    "uri_s": "https://hal.science/hal-03238788v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/iot2020012",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Towards an Intrinsic Definition of Robustness for a Classifier"
+    ],
+    "conferenceTitle_s": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "authFullName_s": [
+      "Theo Giraudon",
+      "Vincent Gripon",
+      "Matthias Lowe",
+      "Franck Vermet"
+    ],
+    "halId_s": "hal-03238789",
+    "uri_s": "https://hal.science/hal-03238789v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICASSP39728.2021.9414573",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Predicting the Generalization Ability of a Few-Shot Classifier"
+    ],
+    "journalTitle_s": "Information",
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Louis Béthune",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03241656",
+    "uri_s": "https://hal.science/hal-03241656v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/info12010029",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Using Deep Neural Networks to Predict and Improve the Performance of Polar Codes"
+    ],
+    "conferenceTitle_s": "ISTC 2021: 11th IEEE International Symposium on Topics in Coding",
+    "authFullName_s": [
+      "Mathieu Leonardon",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03291030",
+    "uri_s": "https://hal.science/hal-03291030v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ISTC49272.2021.9594059",
+    "arxivId_s": "2105.04922",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Multi-Channel Automatic Music Transcription Using Tensor Algebra"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Nancy Bertin",
+      "Jérémy E Cohen"
+    ],
+    "halId_s": "hal-03301448",
+    "uri_s": "https://hal.science/hal-03301448v1",
+    "docType_s": "UNDEFINED",
+    "arxivId_s": "2107.11250",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Beta and Theta Oscillations Correlate With Subjective Time During Musical Improvisation in Ecological and Controlled Settings: A Single Subject Study"
+    ],
+    "journalTitle_s": "Frontiers in Neuroscience",
+    "authFullName_s": [
+      "Nicolas Farrugia",
+      "Alix Lamouroux",
+      "Christophe Rocher",
+      "Jules Bouvet",
+      "Giulia Lioi"
+    ],
+    "halId_s": "hal-03331383",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03331383v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3389/fnins.2021.626723",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Altered Cerebro-Cerebellar Dynamic Functional Connectivity in Alcohol Use Disorder: a Resting-State fMRI Study"
+    ],
+    "journalTitle_s": "The Cerebellum",
+    "authFullName_s": [
+      "Majd Abdallah",
+      "Natalie Zahr",
+      "Manojkumar Saranathan",
+      "Nicolas Honnorat",
+      "Nicolas Farrugia",
+      "Adolf Pfefferbaum",
+      "Edith Sullivan",
+      "Sandra Chanraud"
+    ],
+    "halId_s": "hal-03331399",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03331399v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1007/s12311-021-01241-y",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "A Flexible and Portable Real-time DVB-S2 Transceiver using Multicore and SIMD CPUs"
+    ],
+    "conferenceTitle_s": "The 11th IEEE International Symposium on Topics in Coding (ISTC 2021)",
+    "authFullName_s": [
+      "Adrien Cassagne",
+      "Mathieu Leonardon",
+      "Romain Tajan",
+      "Camille Leroux",
+      "Christophe Jégo",
+      "Olivier Aumage",
+      "Denis Barthou"
+    ],
+    "halId_s": "hal-03336450",
+    "uri_s": "https://hal.science/hal-03336450v2",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ISTC49272.2021.9594063",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "The impact of Neurofeedback on effective connectivity networks in chronic stroke patients: an exploratory study"
+    ],
+    "journalTitle_s": "Journal of Neural Engineering",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Adolfo Veliz",
+      "Julie Coloigner",
+      "Quentin Duché",
+      "Simon Butet",
+      "Mathis Fleury",
+      "Emilie Leveque-Le Bars",
+      "Elise Bannier",
+      "Anatole Lécuyer",
+      "Christian Barillot",
+      "Isabelle Bonan"
+    ],
+    "halId_s": "hal-03354296",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03354296v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1088/1741-2552/ac291e",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "The effect of neurofeedback training on effective connectivity assessed with dynamic causal modeling in stroke patients – a pilot study"
+    ],
+    "conferenceTitle_s": "WFNR 2020 - World Federation For NeuroRehabilitation",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Adolfo Veliz",
+      "Julie Coloigner",
+      "Quentin Duché",
+      "Simon Butet",
+      "Mathis Fleury",
+      "Emilie Leveque-Le Bars",
+      "Elise Bannier",
+      "Anatole Lecuyer",
+      "Christian Barillot",
+      "Isabelle Bonan"
+    ],
+    "halId_s": "hal-03354319",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03354319v1",
+    "docType_s": "POSTER",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Feasibility of a multi-session EEG-fMRI Neurofeedback training – preliminary results from a randomized controlled study in chronic stroke patients"
+    ],
+    "conferenceTitle_s": "WFNR 2020 - World Federation for NeuroRehabilitation",
+    "authFullName_s": [
+      "Simon Butet",
+      "Quentin Duché",
+      "Giulia Lioi",
+      "Mathis Fleury",
+      "Emilie Leveque-Le Bars",
+      "Elise Bannier",
+      "Anatole Lécuyer",
+      "Christian Barillot",
+      "Isabelle Bonan"
+    ],
+    "halId_s": "hal-03354325",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03354325v1",
+    "docType_s": "POSTER",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "New Insights into the Propulsion Power Prediction of Cruise Ships"
+    ],
+    "conferenceTitle_s": "The 33rd IEEE International Conference on Tools with Artificial Intelligence (ICTAI) 2021",
+    "authFullName_s": [
+      "Fred Gonsalves",
+      "Bastien Pasdeloup",
+      "Romain Billot",
+      "Patrick Meyer",
+      "Arnaud Jacques",
+      "Matthieu Lorang"
+    ],
+    "halId_s": "hal-03355574",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03355574v1",
+    "docType_s": "UNDEFINED",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Graphs as Tools to Improve Deep Learning Methods"
+    ],
+    "authFullName_s": [
+      "Carlos Lassance",
+      "Myriam Bontonou",
+      "Mounia Hamidouche",
+      "Bastien Pasdeloup",
+      "Lucas Drumetz",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03377563",
+    "uri_s": "https://hal.science/hal-03377563v1",
+    "docType_s": "COUV",
+    "arxivId_s": "2110.03999",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "A Learning-Based Iterated Local Search Algorithm for Solving the Traveling Salesman Problem"
+    ],
+    "conferenceTitle_s": "OLA2021: Optimization and Learning",
+    "authFullName_s": [
+      "Maryam Karimi-Mamaghan",
+      "Bastien Pasdeloup",
+      "Mehrdad Mohammadi",
+      "Patrick Meyer"
+    ],
+    "halId_s": "hal-03379777",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03379777v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1007/978-3-030-85672-4_4",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "A reinforcement learning-based operator selection in iterated local search for solving scheduling problems"
+    ],
+    "conferenceTitle_s": "EURO 2021: 31st European Conference on Operational Research",
+    "authFullName_s": [
+      "Maryam Karimi-Mamaghan",
+      "Patrick Meyer",
+      "Mehrdad Mohammadi",
+      "Bastien Pasdeloup"
+    ],
+    "halId_s": "hal-03385603",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03385603v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "MusicAE: Encoding songs with Autoencoders to reveal structure"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E Cohen",
+      "Frédéric Bimbot"
+    ],
+    "halId_s": "hal-03406224",
+    "uri_s": "https://hal.science/hal-03406224v1",
+    "docType_s": "SOFTWARE",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Un algorithme génétique pour l'apprentissage d'un modèle de rangement multi-critère à base de profils de références"
+    ],
+    "conferenceTitle_s": "ROADEF 2022 : 23ème congrès annuel de la Société Française de Recherche Opérationnelle et d'Aide à la Décision",
+    "authFullName_s": [
+      "Arwa Khannoussi",
+      "Patrick Meyer",
+      "Alexandru Liviu Olteanu",
+      "Bastien Pasdeloup"
+    ],
+    "halId_s": "hal-03595432",
+    "uri_s": "https://hal.science/hal-03595432v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Barwise Compression Schemes for Audio-Based Music Structure Analysis"
+    ],
+    "conferenceTitle_s": "Sound and Music Computing 2022",
+    "authFullName_s": [
+      "Axel Marmoret",
+      "Jérémy E. Cohen",
+      "Frédéric Bimbot"
+    ],
+    "halId_s": "hal-03600873",
+    "uri_s": "https://hal.science/hal-03600873v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.5281/zenodo.6798330",
+    "arxivId_s": "2202.04981",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Semi-Supervised Convolutive NMF for Automatic Piano Transcription"
+    ],
+    "conferenceTitle_s": "Sound and Music Computing 2022",
+    "authFullName_s": [
+      "Haoran Wu",
+      "Axel Marmoret",
+      "Jérémy E. Cohen"
+    ],
+    "halId_s": "hal-03608497",
+    "uri_s": "https://hal.science/hal-03608497v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.5281/zenodo.6798192",
+    "arxivId_s": "2202.04989",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "MOL-based In-Memory Computing of Binary Neural Networks"
+    ],
+    "journalTitle_s": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+    "authFullName_s": [
+      "Khaled Alhaj Ali",
+      "Amer Baghdadi",
+      "Elsa Dupraz",
+      "Mathieu Léonardon",
+      "Mostafa Rizk",
+      "Jean-Philippe Diguet"
+    ],
+    "halId_s": "hal-03659297",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03659297v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1109/TVLSI.2022.3163233",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Leveraging the Feature Distribution in Transfer-Based Few-Shot Learning"
+    ],
+    "conferenceTitle_s": "ICANN 2021: 30th International Conference on Artificial Neural Networks",
+    "authFullName_s": [
+      "Vincent Gripon",
+      "Yuqing Hu",
+      "Stéphane Pateux"
+    ],
+    "halId_s": "hal-03675135",
+    "uri_s": "https://hal.science/hal-03675135v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1007/978-3-030-86340-1_39",
+    "arxivId_s": "2006.03806",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Few-Shot Decoding of Brain Activation Maps"
+    ],
+    "conferenceTitle_s": "EUSIPCO 2021: 29th European Signal Processing Conference",
+    "authFullName_s": [
+      "Myriam Bontonou",
+      "Giulia Lioi",
+      "Nicolas Farrugia",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03675137",
+    "uri_s": "https://hal.science/hal-03675137v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.23919/EUSIPCO54536.2021.9616158",
+    "arxivId_s": "2010.12500",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Rethinking Weight Decay for Efficient Neural Network Pruning"
+    ],
+    "journalTitle_s": "Journal of Imaging",
+    "authFullName_s": [
+      "Hugo Tessier",
+      "Vincent Gripon",
+      "Mathieu Leonardon",
+      "Matthieu Arzel",
+      "Thomas Hannagan",
+      "David Bertrand"
+    ],
+    "halId_s": "hal-03675138",
+    "uri_s": "https://hal.science/hal-03675138v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/jimaging8030064",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Improving Classification Accuracy With Graph Filtering"
+    ],
+    "conferenceTitle_s": "ICIP 2021: IEEE International Conference on Image Processing",
+    "authFullName_s": [
+      "M. Hamidouche",
+      "C. Lassance",
+      "Y. Hu",
+      "Lucas Drumetz",
+      "Bastien Pasdeloup",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03675142",
+    "uri_s": "https://hal.science/hal-03675142v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/ICIP42928.2021.9506042",
+    "arxivId_s": "2101.04789",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Squeezing Backbone Feature Distributions to the Max for Efficient Few-Shot Learning"
+    ],
+    "journalTitle_s": "Algorithms",
+    "authFullName_s": [
+      "Yuqing Hu",
+      "Stéphane Pateux",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03675145",
+    "uri_s": "https://hal.science/hal-03675145v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/a15050147",
+    "arxivId_s": "2110.09446",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "A Local Mixup to Prevent Manifold Intrusion"
+    ],
+    "conferenceTitle_s": "EUSIPCO 2022: 30th European Signal Processing Conference",
+    "authFullName_s": [
+      "Raphael Baena",
+      "Lucas Drumetz",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03683702",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03683702v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.23919/EUSIPCO55093.2022.9909890",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Classes adversaires dans l'apprentissage avec peu d'exemples"
+    ],
+    "conferenceTitle_s": "GRETSI 2022 : 28ème colloque du Groupement de Recherche en Traitement du Signal et des Images",
+    "authFullName_s": [
+      "Raphael Lafargue",
+      "Jean-Philippe Diguet",
+      "Vincent Gripon",
+      "Bastien Pasdeloup"
+    ],
+    "halId_s": "hal-03690074",
+    "uri_s": "https://hal.science/hal-03690074v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "L'imagerie cérébrale au service de la rééducation"
+    ],
+    "authFullName_s": [
+      "Claire Cury",
+      "Isabelle Bonan",
+      "Anatole Lécuyer",
+      "Giulia Lioi"
+    ],
+    "halId_s": "hal-03690524",
+    "uri_s": "https://inria.hal.science/hal-03690524v1",
+    "docType_s": "COUV",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Un Mixup Local pour empêcher les intrusions de variétés",
+      "A Local Mixup to prevent manifold intrusions."
+    ],
+    "conferenceTitle_s": "GRETSI 2022 : 28ème colloque du Groupement de Recherche en Traitement du Signal et des Images",
+    "authFullName_s": [
+      "Raphael Baena",
+      "Lucas Drumetz",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03693098",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03693098v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
   },
   {
     "title_s": [
@@ -53,6 +1597,328 @@
   },
   {
     "title_s": [
+      "Élagage de réseaux profond de neurones par dégradation sélective des pondérations"
+    ],
+    "conferenceTitle_s": "GRETSI 2022 : 28ème colloque du Groupement de Recherche en Traitement du Signal et des Images",
+    "authFullName_s": [
+      "Hugo Tessier",
+      "Vincent Gripon",
+      "Mathieu Léonardon",
+      "Matthieu Arzel",
+      "Thomas Hannagan",
+      "David Bertrand"
+    ],
+    "halId_s": "hal-03695958",
+    "uri_s": "https://hal.science/hal-03695958v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Élagage de réseaux de neurones convolutifs sur graphes pour la sélection de fréquences significatives pour le décodage d'IRMf"
+    ],
+    "conferenceTitle_s": "GRETSI 2022 : 28ème colloque du Groupement de Recherche en Traitement du Signal et des Images",
+    "authFullName_s": [
+      "Yassine El Ouahidi",
+      "Hugo Tessier",
+      "Giulia Lioi",
+      "Nicolas Farrugia",
+      "Bastien Pasdeloup",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03696640",
+    "uri_s": "https://hal.science/hal-03696640v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Deep learning models of cognitive processes constrained by human brain connectomes"
+    ],
+    "journalTitle_s": "Medical Image Analysis",
+    "authFullName_s": [
+      "Yu Zhang",
+      "Nicolas Farrugia",
+      "Pierre Bellec"
+    ],
+    "halId_s": "hal-03702201",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03702201v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1016/j.media.2022.102507",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Investigating the Not-So-Obvious Effects of Structured Pruning"
+    ],
+    "conferenceTitle_s": "ICML 2022 - Hardware-aware efficient training (HAET)",
+    "authFullName_s": [
+      "Hugo Tessier",
+      "Vincent Gripon",
+      "Mathieu Léonardon",
+      "Matthieu Arzel",
+      "David Bertrand",
+      "Thomas Hannagan"
+    ],
+    "halId_s": "hal-03706472",
+    "uri_s": "https://hal.science/hal-03706472v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Easy—Ensemble Augmented-Shot-Y-Shaped Learning: State-of-The-Art Few-Shot Classification with Simple Components"
+    ],
+    "journalTitle_s": "Journal of Imaging",
+    "authFullName_s": [
+      "Yassir Bendou",
+      "Yuqing Hu",
+      "Raphael Lafargue",
+      "Giulia Lioi",
+      "Bastien Pasdeloup",
+      "Stéphane Pateux",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03714237",
+    "uri_s": "https://hal.science/hal-03714237v1",
+    "docType_s": "ART",
+    "doiId_s": "10.3390/jimaging8070179",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Learning to select operators in meta-heuristics: An integration of Q-learning into the iterated greedy algorithm for the permutation flowshop scheduling problem"
+    ],
+    "journalTitle_s": "European Journal of Operational Research",
+    "authFullName_s": [
+      "Maryam Karimi-Mamaghan",
+      "Mehrdad Mohammadi",
+      "Bastien Pasdeloup",
+      "Patrick Meyer"
+    ],
+    "halId_s": "hal-03723715",
+    "uri_s": "https://imt-atlantique.hal.science/hal-03723715v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1016/j.ejor.2022.03.054",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Programme-cadre FENOIR (Figurations de l’environnement nocturne des territoires réunionnais). Rapport d’étape pour le Parc national de La Réunion",
+      "The FENOIR programme (Figurations de l'environnement nocturne des territoires réunionnais). Progress report for the Reunion National Park"
+    ],
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Johan Milian",
+      "Dany Lapostolle",
+      "Rémi Bénos",
+      "Charles Ronzani",
+      "Hélène Foglar",
+      "Kévin Barré",
+      "Héloïse Prévost",
+      "Marion Maisonobe",
+      "Matthieu Renaud",
+      "Sylvain Morvan",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-03747762",
+    "uri_s": "https://hal.science/hal-03747762v1",
+    "docType_s": "REPORT",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Au sein du CNRS, un Observatoire de l’environnement nocturne pour accompagner la territorialisation de la lutte contre la pollution lumineuse"
+    ],
+    "journalTitle_s": "Les Cahiers Clairaut",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Kévin Barré",
+      "Dany Lapostolle",
+      "Johan Milian",
+      "Rémi Bénos",
+      "Hélène Foglar",
+      "Charles Ronzani",
+      "Nicolas Farrugia",
+      "Marion Maisonobe",
+      "Héloïse Prévost",
+      "Sylvain Morvan",
+      "Matthieu Renaud"
+    ],
+    "halId_s": "hal-03748363",
+    "uri_s": "https://hal.science/hal-03748363v1",
+    "docType_s": "ART",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Silent·Cities. Paysages sonores d'un monde confiné"
+    ],
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Nicolas Farrugia",
+      "Amandine Gasc",
+      "Jérémy Froidevaux"
+    ],
+    "halId_s": "hal-03748373",
+    "uri_s": "https://hal.science/hal-03748373v1",
+    "docType_s": "OTHER",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "The nocturnal environment, a boundary object to structure an interdisciplinary research field"
+    ],
+    "conferenceTitle_s": "Congrès de l’Union géographique internationale (UGI | IGU)",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Johan Milian",
+      "Dany Lapostolle",
+      "Rémi Bénos",
+      "Kévin Barré",
+      "Hélène Foglar",
+      "Charles Ronzani",
+      "Héloïse Prévost",
+      "Marion Maisonobe",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-03748485",
+    "uri_s": "https://hal.science/hal-03748485v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Silent·Cities, un projet collaboratif pour l’exploration des paysages sonores d’un monde confiné"
+    ],
+    "conferenceTitle_s": "Congrès de l’Union géographique internationale (UGI | IGU)",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Nicolas Farrugia",
+      "Jérémy Froidevaux",
+      "Amandine Gasc",
+      "Nicolas Pajusco"
+    ],
+    "halId_s": "hal-03748554",
+    "uri_s": "https://hal.science/hal-03748554v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "PANTONE® 19-3924, ou la \"normatisation\" de l’obscurité dans les espaces de faible densité",
+      "PANTONE® 19-3924, or the “normatization” of darkness in low-density areas"
+    ],
+    "conferenceTitle_s": "International Symposium of Labex DRIIHM 2021",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Johan Milian",
+      "Rémi Bénos",
+      "Dany Lapostolle",
+      "Charles Ronzani",
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "hal-03749223",
+    "uri_s": "https://hal.science/hal-03749223v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2021
+  },
+  {
+    "title_s": [
+      "Leveraging Structured Pruning of Convolutional Neural Networks"
+    ],
+    "conferenceTitle_s": "SiPS 2022: IEEE Workshop on Signal Processing Systems",
+    "authFullName_s": [
+      "Hugo Tessier",
+      "Vincent Gripon",
+      "Mathieu Leonardon",
+      "Matthieu Arzel",
+      "David Bertrand",
+      "Thomas Hannagan"
+    ],
+    "halId_s": "hal-03767634",
+    "uri_s": "https://hal.science/hal-03767634v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1109/SiPS55645.2022.9919253",
+    "arxivId_s": "2206.06247",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Energy Consumption Analysis of pruned Semantic Segmentation Networks on an Embedded GPU"
+    ],
+    "conferenceTitle_s": "SYSINT 2022: International Conference on System-Integrated Intelligence",
+    "authFullName_s": [
+      "Hugo Tessier",
+      "Vincent Gripon",
+      "Mathieu Léonardon",
+      "Matthieu Arzel",
+      "David Bertrand",
+      "Thomas Hannagan"
+    ],
+    "halId_s": "hal-03767636",
+    "uri_s": "https://hal.science/hal-03767636v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1007/978-3-031-16281-7_52",
+    "arxivId_s": "2206.06255",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "Potentiel de l’éco-acoustique pour l’étude des rythmes et paysages d’un socio-écosystème de montagne : le cas exploratoire de la vallée du Vicdessos"
+    ],
+    "conferenceTitle_s": "Séminaire annuel de l’OHM Pyrénées-Haut Vicdessos",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Nicolas Farrugia",
+      "Johan Milian",
+      "Rémi Bénos",
+      "Clélia Sirami",
+      "Kévin Barré",
+      "Charles Ronzani",
+      "Hélène Foglar",
+      "Dany Lapostolle",
+      "Nicolas Pajusco"
+    ],
+    "halId_s": "hal-03784122",
+    "uri_s": "https://cnrs.hal.science/hal-03784122v1",
+    "docType_s": "COMM",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
+      "L’Observatoire de l’environnement nocturne de La Réunion, un dispositif partenarial de recherche-action territorialisée"
+    ],
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Johan Milian",
+      "Dany Lapostolle",
+      "Lisa Olivette",
+      "Héloïse Prévost",
+      "Kévin Barré",
+      "Rémi Bénos",
+      "Marion Maisonobe",
+      "Charles Ronzani",
+      "Hélène Foglar",
+      "David Loose",
+      "Matthieu Renaud",
+      "Patrick Jeanty",
+      "Béatrice Morel",
+      "Mathieu Delsaut",
+      "Sylvain Morvan",
+      "Nicolas Farrugia",
+      "Nicolas Pajusco",
+      "Anthony Dofal",
+      "Jérémy Froidevaux",
+      "L. Godet"
+    ],
+    "halId_s": "hal-03815890",
+    "uri_s": "https://cnrs.hal.science/hal-03815890v1",
+    "docType_s": "UNDEFINED",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
       "Convolutive Block-Matching Segmentation Algorithm with Application to Music Structure Analysis"
     ],
     "conferenceTitle_s": "WASPAA 2023 - IEEE Workshop on Applications of Signal Processing to Audio and Acoustics",
@@ -67,6 +1933,23 @@
     "doiId_s": "10.1109/WASPAA58266.2023.10248125",
     "arxivId_s": "2210.15356",
     "producedDateY_i": 2023
+  },
+  {
+    "title_s": [
+      "Inter-Operability of Compression Techniques for Efficient Deployment of CNNs on Microcontrollers"
+    ],
+    "conferenceTitle_s": "SYSINT 2022: International Conference on System-Integrated Intelligence",
+    "authFullName_s": [
+      "Hamoud Younes",
+      "Hugo Le Blevec",
+      "Mathieu Léonardon",
+      "Vincent Gripon"
+    ],
+    "halId_s": "hal-03850858",
+    "uri_s": "https://hal.science/hal-03850858v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1007/978-3-031-16281-7_51",
+    "producedDateY_i": 2022
   },
   {
     "title_s": [
@@ -1218,6 +3101,279 @@
     "docType_s": "COMM",
     "doiId_s": "10.61782/fa.2023.0330",
     "producedDateY_i": 2023
+  },
+  {
+    "title_s": [
+      "A dataset of acoustic measurements from soundscapes collected worldwide during the COVID-19 pandemic"
+    ],
+    "journalTitle_s": "Scientific Data",
+    "authFullName_s": [
+      "Samuel Challéat",
+      "Nicolas Farrugia",
+      "Jérémy S P Froidevaux",
+      "Amandine Gasc",
+      "Nicolas Pajusco",
+      "Carlos R Abrahams",
+      "Orlando Acevedo-Charry",
+      "Ludmilla M S Aguiar",
+      "Zachary R Ahlin",
+      "Franz Aiple",
+      "Cécile H. Albert",
+      "Irene Alcocer",
+      "Ana Sofia Alves",
+      "Francisco Amorim",
+      "Ludmila B Andrade",
+      "Pedro M Araújo",
+      "Fernando Ascensão",
+      "Serge Aucoin",
+      "Elias Bader",
+      "Diego Balbuena",
+      "Luc Barbaro",
+      "Eder Barbier",
+      "Eliana Barona Cortés",
+      "Luis Emilio Barrie",
+      "José L Bartheld",
+      "Henry Bates",
+      "Alice Baudouin",
+      "Richard D Beason",
+      "Christa Beckmann",
+      "Amy Beeston",
+      "Gvan Belá",
+      "Kristen M Bellisario",
+      "Simon Belshaw",
+      "Juan F Beltrán",
+      "Raone Beltrão-Mendes",
+      "Enrico Bernard",
+      "Thierry Besche",
+      "Peter A Biro",
+      "Cathie Boléat",
+      "Mathieu Bossaert",
+      "Ally Bradley",
+      "Paulo Branco",
+      "Wijnand Bredewold",
+      "Philip A Briggs",
+      "Sylvio Romério Briglia-Ferreira",
+      "Emily Buckner",
+      "Ivana Budinski",
+      "Albane Burens",
+      "Rachel T Buxton",
+      "Andrés Canavero",
+      "Paulo Cardoso",
+      "Farah Carrasco-Rueda",
+      "Paula C Caycedo",
+      "Frédéric Cazaban",
+      "Lara R Cerveira",
+      "Ada Ceuppens",
+      "Alain Challéat",
+      "Angela Chappa Larrea",
+      "Adrien Charbonneau",
+      "Mina Charnaux",
+      "Pooja Choksi",
+      "Jan Cibulka",
+      "Julián Clavijo-Bustos",
+      "Zuania Colón-Piñeiro",
+      "Sofia Conde",
+      "Maria João Costa",
+      "António Cotão",
+      "Clément Couturier",
+      "Marina D A Scarpelli",
+      "Luis P da Silva",
+      "Tom Davis",
+      "Nathalie de Lacoste",
+      "Sarah L Deans",
+      "Serge Dentin",
+      "Krzysztof Deoniziak",
+      "Sarah R Dodgin",
+      "Ivo dos Santos",
+      "Tudor I Draganoiu",
+      "Bruno Drolet",
+      "Marina H L Duarte",
+      "Gonçalo Duarte",
+      "Chloé Dubset",
+      "Frank Dziock",
+      "Alice Eldridge",
+      "Simon Elise",
+      "David R Elliott",
+      "Arthur Enguehard",
+      "Karl Esztl",
+      "Darren M Evans",
+      "Daniel M Ferreira",
+      "Sonia a F Ferreira",
+      "Diogo F Ferreira",
+      "Ana Margarida Ferreira",
+      "Penelope C Fialas",
+      "Lauren Foster-Shaner",
+      "Bárbara Freitas",
+      "Nicholas R Friedman",
+      "Susan Fuller",
+      "Didier Galop",
+      "Daniel Garside",
+      "Jean-Christophe Gattus",
+      "Sylvain Geoffray",
+      "Louis Godart",
+      "Laurent Godet",
+      "Inês Gomes Marques",
+      "Fernando González-Garca",
+      "Paul Griesberger",
+      "Bilal Habib",
+      "Madeline E Hallet",
+      "Meena M Haribal",
+      "Jennifer Hatlauf",
+      "Sylvain Haupert",
+      "José M Herrera",
+      "Sierra E Herzberger",
+      "Frederico Hintze Oliveira",
+      "Kathy H Hodder",
+      "Isabelle Hoecherl",
+      "Mark F Hulme",
+      "Emilia Hyland",
+      "Michel Jacobs",
+      "Akash Jaiswal",
+      "Laurent Jégou",
+      "Steve Jones",
+      "Hervé Jourdan",
+      "Tomáš Jůnek",
+      "Leili Khalatbari",
+      "Sarika Khanwilkar",
+      "James J N Kitson",
+      "Amanda H Korstjens",
+      "Kim Krähenbühl-Künzli",
+      "Natalija Lace",
+      "Sébastien Laguet",
+      "Hedwig Lankau",
+      "Thiago O Laranjeiras",
+      "Gregoire Lauvin",
+      "Samuel Lavin",
+      "Matthieu Le Corre",
+      "Monica León",
+      "Judah J Levenson",
+      "Pavel Linhart",
+      "Juliette Linossier",
+      "Diego J Lizcano",
+      "Diego Llusia",
+      "Marty Lockett",
+      "Pedro B Lopes",
+      "Ricardo Jorge Lopes",
+      "José Vicente López-Bao",
+      "Adrià López-Baucells",
+      "David López-Bosch",
+      "Ricardo B Machado",
+      "Claude Mande",
+      "Guillaume Marchais",
+      "Fabio Marcolin",
+      "Oscar H Marn Gómez",
+      "Carina B Marques",
+      "J. Tiago Marques",
+      "Tilla Martin",
+      "Vanessa Mata",
+      "Eloisa Matheu-Cortada",
+      "Vincent Médoc",
+      "Kirsten E Miller",
+      "Basile Montagne",
+      "Allen Moore",
+      "Jomari M A Moreno",
+      "Felipe N Moreno-Gómez",
+      "Sandra Mueller",
+      "Daniela Murillo-Bedoya",
+      "Luciano N Naka",
+      "Adrian C Newton",
+      "João T Nunes",
+      "Pierrette Nyssen",
+      "Fionn Ó Marcaigh",
+      "Darren P O’connell",
+      "M. Teague O’mara",
+      "David Ocampo",
+      "Meryem Ouertani",
+      "Jan Olav Owren",
+      "Vitor H Paiva",
+      "Stéphane Paris",
+      "Marion Parisot",
+      "Swaroop Patankar",
+      "Jorge M Pereira",
+      "Slvia Pereira Barreiro",
+      "Cédric Peyronnet",
+      "Magali Philippe",
+      "Bryan C Pijanowski",
+      "Nuno Pinto",
+      "Zach Poff",
+      "Jonathan M Poppele",
+      "Andrew Power",
+      "Victoria Pratt",
+      "Darren S Proppe",
+      "Raphaël Proulx",
+      "Laura Prugh",
+      "Sebastien J Puechmaille",
+      "Xavier Puig-Montserrat",
+      "Lorenzo Quaglietta",
+      "John E Quinn",
+      "Nancy I Quiroga",
+      "Mariana Ramos",
+      "Rebecca Rasmussen",
+      "Georges Reckinger",
+      "Mimi Reed",
+      "Jean-Benoît Reginster",
+      "Vanesa Rivera",
+      "Clara F Rodrigues",
+      "Patricia Mara Rodrguez-González",
+      "Eduardo Rodrguez-Rodrguez",
+      "Luke Romaine",
+      "Andrei L Roos",
+      "Joao Rosa",
+      "Null- J Ross",
+      "Quentin Rouy",
+      "Alyssa M Ryser",
+      "Sougata Sadhukhan",
+      "Robin Sandfort",
+      "José M Santos",
+      "David Savage",
+      "Stéphanie C Schai-Braun",
+      "Michael Scherer-Lorenzen",
+      "Mathilde Schoenauer Sebag",
+      "Pedro Segurado",
+      "Ana M Serronha",
+      "Taylor Shaw",
+      "Brenda Shepherd",
+      "Cárol Sierra-Durán",
+      "Bruno M Silva",
+      "Victoire Simon",
+      "Peter F Sinclair",
+      "Carolina Soto-Navarro",
+      "Anne Sourdril",
+      "Jérôme Sueur",
+      "Larissa S M Sugai",
+      "Ian B Tarrant",
+      "Fran Tattersall",
+      "Christopher N Templeton",
+      "Michelle E Thompson",
+      "Marcela Todd",
+      "Juan D Tovar-Garca",
+      "Karina Townsend",
+      "Amaro Tuninetti",
+      "Paul A Ullrich",
+      "Juan S Vargas Soto",
+      "Kevin Vega",
+      "Gabriella Ventrice",
+      "Pierre J Victor",
+      "Josep Vidal Oliveras",
+      "Sara Villén-Pérez",
+      "Olivier Vinet",
+      "Agnés Vivat",
+      "Jean-Do Vrignault",
+      "William D J Walton",
+      "Christopher J Watson",
+      "Oliver R Wearn",
+      "Damion L Whyte",
+      "Fredric M Windsor",
+      "Yanchen Wu",
+      "Selena Xie",
+      "Ignacio Zeballos Puccherelli",
+      "Vera Zina"
+    ],
+    "halId_s": "hal-04717397",
+    "uri_s": "https://cnrs.hal.science/hal-04717397v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1038/s41597-024-03611-7",
+    "producedDateY_i": 2024
   },
   {
     "title_s": [
@@ -2670,6 +4826,99 @@
   },
   {
     "title_s": [
+      "Bimodal EEG-fMRI Neurofeedback for stroke rehabilitation"
+    ],
+    "conferenceTitle_s": "ISPRM 2018 -International Society of Physical and Rehabilitation Medicine",
+    "authFullName_s": [
+      "Giulia Lioi",
+      "Mathis Fleury",
+      "Simon Butet",
+      "Anatole Lécuyer",
+      "Christian Barillot",
+      "Isabelle Bonan"
+    ],
+    "halId_s": "inserm-01932954",
+    "uri_s": "https://inserm.hal.science/inserm-01932954v1",
+    "docType_s": "POSTER",
+    "producedDateY_i": 2018
+  },
+  {
+    "title_s": [
+      "Learning bi-modal EEG-fMRI neurofeedback to improve neurofeedback in EEG only"
+    ],
+    "conferenceTitle_s": "Real-Time Functional Imaging and Neurofeedback",
+    "authFullName_s": [
+      "Claire Cury",
+      "Pierre Maurel",
+      "Giulia Lioi",
+      "Rémi Gribonval",
+      "Christian Barillot"
+    ],
+    "halId_s": "inserm-02368720",
+    "uri_s": "https://inserm.hal.science/inserm-02368720v1",
+    "docType_s": "COMM",
+    "doiId_s": "10.1101/599589",
+    "producedDateY_i": 2019
+  },
+  {
+    "title_s": [
+      "Impact of 1D and 2D visualisation on EEG-fMRI neurofeedback training during a motor imagery task."
+    ],
+    "conferenceTitle_s": "ISBI 2020 - IEEE International Symposium on Biomedical Imaging",
+    "authFullName_s": [
+      "Claire Cury",
+      "Giulia Lioi",
+      "Lorraine Perronnet",
+      "Anatole Lécuyer",
+      "Pierre Maurel",
+      "Christian Barillot"
+    ],
+    "halId_s": "inserm-02489459",
+    "uri_s": "https://inserm.hal.science/inserm-02489459v2",
+    "docType_s": "COMM",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Machine learning score to predict in-hospital outcomes in patients hospitalized in cardiac intensive care unit"
+    ],
+    "journalTitle_s": "European Heart Journal - Digital Health",
+    "authFullName_s": [
+      "Orianne Weizman",
+      "Kenza Hamzi",
+      "Patrick Henry",
+      "Guillaume Schurtz",
+      "Marie Hauguel-Moreau",
+      "Antonin Trimaille",
+      "Marc Bedossa",
+      "Jean Claude Dib",
+      "Sabir Attou",
+      "Tanissia Boukertouta",
+      "Franck Boccara",
+      "Thibaut Pommier",
+      "Pascal Lim",
+      "Thomas Bochaton",
+      "Damien Millischer",
+      "Benoit Merat",
+      "Fabien Picard",
+      "Nissim Grinberg",
+      "David Sulman",
+      "Bastien Pasdeloup",
+      "Yassine El Ouahidi",
+      "Treçy Gonçalves",
+      "Eric Vicaut",
+      "Jean-Guillaume Dillinger",
+      "Solenn Toupin",
+      "Théo Pezel"
+    ],
+    "halId_s": "inserm-05344949",
+    "uri_s": "https://inserm.hal.science/inserm-05344949v1",
+    "docType_s": "ART",
+    "doiId_s": "10.1093/ehjdh/ztae098",
+    "producedDateY_i": 2025
+  },
+  {
+    "title_s": [
       "Rééducation motrice post-AVC par neurofeedback EEG-IRMf"
     ],
     "conferenceTitle_s": "SFRMBM 2025 - 7ème congrès de la Société Française de Résonance Magnétique en Biologie et Médecine",
@@ -2692,6 +4941,31 @@
   },
   {
     "title_s": [
+      "Efficient Representations for Graph and Neural Network Signals",
+      "Représentations efficaces pour les signaux sur graphes et réseaux de neurones"
+    ],
+    "authFullName_s": [
+      "Vincent Gripon"
+    ],
+    "halId_s": "tel-03097485",
+    "uri_s": "https://hal.science/tel-03097485v1",
+    "docType_s": "HDR",
+    "producedDateY_i": 2020
+  },
+  {
+    "title_s": [
+      "Interdisciplinary approaches for Neurosciences, Artificial Intelligence and Sound"
+    ],
+    "authFullName_s": [
+      "Nicolas Farrugia"
+    ],
+    "halId_s": "tel-03815058",
+    "uri_s": "https://imt-atlantique.hal.science/tel-03815058v1",
+    "docType_s": "HDR",
+    "producedDateY_i": 2022
+  },
+  {
+    "title_s": [
       "Convolutional neural networks pruning and its application to embedded vision systems",
       "Élagage de réseaux de neurones convolutifs et son application aux systèmes embarqués de vision par ordinateur"
     ],
@@ -2703,6 +4977,20 @@
     "docType_s": "THESE",
     "doiId_s": "10.70675/73a5734fz6c44z4d68zb238z8d30e4e00f1a",
     "producedDateY_i": 2023
+  },
+  {
+    "title_s": [
+      "Unsupervised machine learning paradigms for the representation of music similarity and structure",
+      "Paradigmes d'apprentissage automatique non-supervisés pour les représentations de la similarité et de la structure musicale"
+    ],
+    "authFullName_s": [
+      "Axel Marmoret"
+    ],
+    "halId_s": "tel-04589687",
+    "uri_s": "https://theses.hal.science/tel-04589687v2",
+    "docType_s": "THESE",
+    "doiId_s": "10.70675/63433a1ezc187z4a00z8651z306eb36a9dc5",
+    "producedDateY_i": 2022
   },
   {
     "title_s": [
