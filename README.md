@@ -26,7 +26,7 @@ The weekly and manually runnable `update-hal.yml` workflow proposes generated ch
 
 ## Deployment when ready
 
-The Pages workflow builds the Jekyll site with Ruby 3.3 and deploys on pushes to `main` after Pages is set to GitHub Actions. The root URL is `https://brain-bzh.github.io` with an empty `baseurl`. Existing project sites such as `/reve/` and `/llm-course/` are maintained separately; verify them after launch. Nothing has been pushed or deployed during local development.
+The Pages workflow builds the Jekyll site with Ruby 3.3 and deploys on pushes to `main` after Pages is set to GitHub Actions. The root URL is `https://brain.bzh` (custom domain set in the Pages settings) with an empty `baseurl`. Existing project sites such as `/reve/` and `/llm-course/` are maintained separately; verify them after launch. Nothing has been pushed or deployed during local development.
 
 ## Visual identity
 
